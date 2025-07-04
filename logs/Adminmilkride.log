@@ -1,0 +1,348 @@
+[INFO ] 2025-07-04 15:39:17.929 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 15:39:20.542 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 15:39:20.609 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 15:39:28.545 [main] AdminMilkRidev3 - login sucefully  
+[INFO ] 2025-07-04 15:39:28.545 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 15:39:31.062 [main] AdminMilkRidev3 - Hub listpage open  
+[INFO ] 2025-07-04 15:39:31.062 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 15:39:41.560 [main] AdminMilkRidev3 - Hub listpage open  
+[INFO ] 2025-07-04 15:39:41.561 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 15:39:43.003 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 16:12:40.215 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 16:13:02.276 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 16:13:02.350 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 16:13:51.824 [main] AdminMilkRidev3 - login sucefully  
+[INFO ] 2025-07-04 16:13:51.824 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 16:13:54.800 [main] AdminMilkRidev3 - Hub listpage open  
+[INFO ] 2025-07-04 16:13:54.801 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[ERROR] 2025-07-04 16:16:54.850 [main] AdminMilkRidev3 - Exception occurred in LoginAdminpenal: java.util.concurrent.TimeoutException
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [671d797779936d613dd1741ade289eb8, clickElement {id=f.C038510B71C67B0DA3517521457074EA.d.6F3E0397692D2B1F16C44026FA1B45DB.e.179}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50640/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (671d797779936d613dd1741ade289eb8)] -> xpath: (//table[contains(@class, 'table')]//tbody//tr[1]//td[2]/a)[1]]
+Session ID: 671d797779936d613dd1741ade289eb8
+[INFO ] 2025-07-04 16:20:09.281 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 16:20:09.439 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 16:20:09.510 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 16:20:50.595 [main] AdminMilkRidev3 - login sucefully  
+[INFO ] 2025-07-04 16:20:50.595 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 16:20:53.978 [main] AdminMilkRidev3 - Hub listpage open  
+[INFO ] 2025-07-04 16:20:53.979 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 16:22:43.950 [main] AdminMilkRidev3 - Hub listpage open  
+[INFO ] 2025-07-04 16:22:43.951 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 16:22:46.917 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 16:22:48.668 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 16:22:48.743 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 16:22:48.765 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 16:22:48.794 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 16:22:50.680 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 16:39:16.418 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 16:39:17.368 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 16:39:17.440 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 16:39:19.539 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 16:39:21.756 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 16:39:25.406 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 16:39:27.108 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 16:39:28.654 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 16:39:28.696 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 16:39:28.724 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 16:39:28.748 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 16:39:30.692 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 17:22:21.657 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 17:22:21.840 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 17:22:21.916 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 17:22:24.166 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 17:22:26.402 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 17:22:29.807 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 17:22:31.455 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 17:22:33.163 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 17:22:33.200 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 17:22:33.234 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 17:22:33.259 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 17:22:35.175 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 17:22:35.211 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 17:22:36.921 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 17:22:36.955 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 17:22:38.594 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 17:22:38.639 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 17:22:40.306 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 17:22:40.357 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 17:24:41.969 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 17:24:42.829 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 17:24:42.902 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 17:24:45.135 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 17:24:47.849 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 17:24:51.986 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 17:24:53.672 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 17:24:55.312 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 17:24:55.353 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 17:24:55.384 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 17:24:55.410 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 17:24:57.171 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 17:24:57.201 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 17:24:58.800 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 17:24:58.837 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 17:25:00.518 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 17:25:00.549 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 17:25:02.250 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 17:25:02.290 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 17:25:04.019 [main] AdminMilkRidev3 - Click on hubmanager module
+[INFO ] 2025-07-04 17:36:45.688 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 17:36:45.835 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 17:36:45.904 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 17:36:47.870 [main] AdminMilkRidev3 - Dashboard URL matched successfully: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 17:36:47.905 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 17:36:50.160 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 17:36:54.199 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 17:36:55.821 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 17:36:57.682 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 17:36:57.727 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 17:36:57.754 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 17:36:57.778 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 17:36:59.934 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 17:36:59.967 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 17:37:01.659 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 17:37:01.693 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 17:37:03.640 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 17:37:03.671 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 17:37:05.481 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 17:37:05.510 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 17:37:06.402 [main] AdminMilkRidev3 - Hub Module Finish...
+[INFO ] 2025-07-04 17:41:27.119 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 17:41:27.934 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 17:41:27.997 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 17:41:30.272 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 17:41:30.312 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 17:41:32.196 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 17:41:35.741 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 17:41:37.478 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 17:41:39.114 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 17:41:39.147 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 17:41:39.183 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 17:41:39.208 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 17:41:40.912 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 17:41:40.939 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 17:41:42.646 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 17:41:42.676 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 17:41:44.196 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 17:41:44.226 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 17:41:45.684 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 17:41:45.711 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 17:41:46.538 [main] AdminMilkRidev3 - Hub Module Finish...
+[INFO ] 2025-07-04 17:50:06.489 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 17:50:07.253 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 17:50:07.320 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 17:50:09.379 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 17:50:09.422 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 17:50:11.211 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-04 17:50:11.241 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 17:50:14.873 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-04 17:50:14.916 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 17:50:16.393 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-04 17:50:16.459 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 17:50:18.144 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 17:50:18.151 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-04 17:50:18.195 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 17:50:18.224 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 17:50:18.248 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 17:50:19.956 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 17:50:19.966 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-04 17:50:19.994 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 17:50:21.562 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 17:50:21.594 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 17:50:23.258 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 17:50:23.266 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-04 17:50:23.297 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 17:50:24.883 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 17:50:24.894 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-04 17:50:24.921 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 17:50:25.800 [main] AdminMilkRidev3 - Hub Module Finish...
+[INFO ] 2025-07-04 18:40:11.457 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 18:40:12.237 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 18:40:12.307 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 18:40:14.392 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 18:40:14.434 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 18:40:16.372 [main] AdminMilkRidev3 - Delevery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+[INFO ] 2025-07-04 18:40:16.400 [main] AdminMilkRidev3 - Deivery dashborad page sucefully open - Passed 
+[INFO ] 2025-07-04 18:40:17.013 [main] AdminMilkRidev3 - Delivery Transfer page  URL: https://app.milkride.com/admin/delivery-transfer
+[INFO ] 2025-07-04 18:40:17.937 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-04 18:40:17.966 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 18:40:21.558 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-04 18:40:21.597 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 18:40:23.428 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-04 18:40:23.462 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 18:40:25.151 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 18:40:25.161 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-04 18:40:25.203 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 18:40:25.226 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 18:40:25.251 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 18:40:27.185 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 18:40:27.197 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-04 18:40:27.223 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 18:40:28.942 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 18:40:28.972 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 18:40:30.452 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 18:40:30.460 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-04 18:40:30.489 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 18:40:32.084 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 18:40:32.092 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-04 18:40:32.129 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[ERROR] 2025-07-04 18:40:42.247 [main] AdminMilkRidev3 - Exception occurred in LoginAdminpenal: no such element: Unable to locate element: {"method":"xpath","selector":"(//h2[normalize-space()='Dashboard'])[1]"}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d75673d3d7f413deaca0abd09f7b0788, findElement {value=(//h2[normalize-space()='Dashboard'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55152/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d75673d3d7f413deaca0abd09f7b0788
+[INFO ] 2025-07-04 18:44:50.137 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 18:44:50.298 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 18:44:50.369 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 18:44:52.544 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/login
+[INFO ] 2025-07-04 18:44:52.587 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 18:44:54.312 [main] AdminMilkRidev3 - Delevery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+[INFO ] 2025-07-04 18:44:54.340 [main] AdminMilkRidev3 - Deivery dashborad page sucefully open - Passed 
+[INFO ] 2025-07-04 18:44:55.116 [main] AdminMilkRidev3 - Delivery Transfer page  URL: https://app.milkride.com/admin/delivery-transfer
+[INFO ] 2025-07-04 18:44:55.911 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-04 18:44:55.943 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 18:44:59.795 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-04 18:44:59.832 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 18:45:01.776 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-04 18:45:01.818 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 18:45:05.565 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 18:45:05.580 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-04 18:45:05.630 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 18:45:05.658 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 18:45:05.690 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 18:45:07.732 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 18:45:07.742 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-04 18:45:07.767 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 18:45:09.627 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 18:45:09.657 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 18:45:11.419 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 18:45:11.432 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-04 18:45:11.463 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 18:45:13.079 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 18:45:13.089 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-04 18:45:13.113 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 18:45:13.994 [main] AdminMilkRidev3 - Hub Module Finish...click on dashborad
+[INFO ] 2025-07-04 18:47:27.888 [main] AdminMilkRidev3 - Url Open
+[ERROR] 2025-07-04 18:47:37.997 [main] AdminMilkRidev3 - Exception occurred in LoginAdminpenal: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'Delivery Management')])[1]"}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4711822b3808a56e1733bf5b3dc73fe, findElement {using=xpath, value=(//span[contains(text(),'Delivery Management')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55428}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55428/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4711822b3808a56e1733bf5b3dc73fe
+[INFO ] 2025-07-04 18:47:38.448 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 18:47:38.531 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 18:47:40.729 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/login
+[INFO ] 2025-07-04 18:47:40.779 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 18:47:42.446 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-04 18:47:42.474 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 18:47:46.213 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-04 18:47:46.253 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 18:47:47.582 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-04 18:47:47.630 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 18:47:49.244 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 18:47:49.254 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-04 18:47:49.293 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 18:47:49.316 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 18:47:49.342 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 18:47:51.224 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 18:47:51.231 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-04 18:47:51.283 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 18:47:53.107 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 18:47:53.139 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 18:47:54.825 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 18:47:54.832 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-04 18:47:54.870 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 18:47:56.429 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 18:47:56.450 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-04 18:47:56.485 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 18:47:57.350 [main] AdminMilkRidev3 - Hub Module Finish...click on dashborad
+[INFO ] 2025-07-04 18:55:24.896 [main] AdminMilkRidev3 - Url Open
+[ERROR] 2025-07-04 18:55:35.534 [main] AdminMilkRidev3 - Exception occurred in LoginAdminpenal: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'Delivery Management')])[1]"}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f5b0109c92f761068689ffed33e3298, findElement {using=xpath, value=(//span[contains(text(),'Delivery Management')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55687}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55687/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f5b0109c92f761068689ffed33e3298
+[INFO ] 2025-07-04 18:56:10.122 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 18:56:10.274 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 18:56:10.346 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 18:56:12.489 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 18:56:12.528 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 18:56:14.808 [main] AdminMilkRidev3 - Delevery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+[INFO ] 2025-07-04 18:56:14.839 [main] AdminMilkRidev3 - Deivery dashborad page sucefully open - Passed 
+[INFO ] 2025-07-04 18:56:15.577 [main] AdminMilkRidev3 - Delivery Transfer page  URL: https://app.milkride.com/admin/delivery-transfer
+[INFO ] 2025-07-04 18:56:54.798 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 18:56:54.952 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 18:56:55.021 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 18:56:57.156 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 18:56:57.201 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 18:56:59.144 [main] AdminMilkRidev3 - Delevery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+[INFO ] 2025-07-04 18:56:59.170 [main] AdminMilkRidev3 - Deivery dashborad page sucefully open - Passed 
+[INFO ] 2025-07-04 18:56:59.846 [main] AdminMilkRidev3 - Delivery Transfer page  URL: https://app.milkride.com/admin/delivery-transfer
+[INFO ] 2025-07-04 18:57:00.677 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-04 18:57:00.707 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 18:57:04.250 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-04 18:57:04.288 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 18:57:05.818 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-04 18:57:05.879 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 18:57:07.419 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 18:57:07.426 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-04 18:57:07.474 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 18:57:07.499 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 18:57:07.523 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 18:57:09.155 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 18:57:09.166 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-04 18:57:09.195 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 18:57:10.747 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 18:57:10.776 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 18:57:12.253 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 18:57:12.265 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-04 18:57:12.291 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 18:57:14.003 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 18:57:14.011 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-04 18:57:14.043 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 18:57:14.905 [main] AdminMilkRidev3 - Hub Module Finish...click on dashborad
+[INFO ] 2025-07-04 19:03:41.615 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-04 19:03:41.760 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-04 19:03:41.827 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-04 19:03:43.856 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-04 19:03:43.894 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-04 19:03:46.258 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-04 19:03:46.281 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-04 19:03:49.566 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-04 19:03:49.608 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-04 19:03:51.467 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-04 19:03:51.528 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-04 19:03:53.425 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-04 19:03:53.433 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-04 19:03:53.473 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-04 19:03:53.500 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-04 19:03:53.525 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-04 19:03:55.542 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-04 19:03:55.553 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-04 19:03:55.584 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-04 19:03:57.169 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-04 19:03:57.201 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-04 19:03:58.610 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-04 19:03:58.617 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-04 19:03:58.654 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-04 19:04:00.197 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-04 19:04:00.220 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-04 19:04:00.257 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-04 19:04:01.163 [main] AdminMilkRidev3 - Hub Module Finish...click on dashborad
+[INFO ] 2025-07-04 19:04:03.184 [main] AdminMilkRidev3 - Delevery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+[INFO ] 2025-07-04 19:04:03.212 [main] AdminMilkRidev3 - Deivery dashborad page sucefully open - Passed 
+[INFO ] 2025-07-04 19:04:03.883 [main] AdminMilkRidev3 - Delivery Transfer page  URL: https://app.milkride.com/admin/delivery-transfer
