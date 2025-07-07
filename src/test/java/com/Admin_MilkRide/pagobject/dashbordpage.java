@@ -27,22 +27,41 @@ public class dashbordpage {
 	@FindBy(xpath = "(//span[normalize-space()='All Hubs'])[1]")
 
 	WebElement Allhub;
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Delivery Management')])[1]")
 	WebElement deliverymanagementElement;
-	
+
 	@FindBy(xpath = "(//span[normalize-space()='Delivery Dashboard'])[1]")
 	WebElement deliverydashbordElement;
-	
-	
-	
-	
-	
 
-	// Action perfroms
+	@FindBy(xpath = "(//span[contains(text(),'Billing and History')])[1]")
+	WebElement billinghistoryElement;
+
+	@FindBy(xpath = "(//span[normalize-space()='Invoices'])[1]")
+	WebElement invoicElement;
+
+	@FindBy(xpath = "(//span[contains(text(),'Customer Management')])[1]")
+	WebElement customer_ManagementElement;
+
+	@FindBy(xpath = "(//span[@class='menu-title'][normalize-space()='Customers'])[1]")
+	WebElement customerElement;
+
+	@FindBy(xpath = "(//span[contains(text(),'Product Catalog')])[1]")
+	WebElement product_catalogElement;
+	@FindBy(xpath = "(//span[normalize-space()='Category'])[1]")
+	WebElement categoryElement;
+
+	@FindBy(xpath = "(//span[contains(text(),'Inventory Management')])[1]")
+
+	WebElement inventory_ManagmentElement;
+
+	@FindBy(xpath = "(//span[normalize-space()='Warehouse'])[1]")
+	WebElement warehousElement;
+
+	// Action Performs
 	public void clickdashbord() {
 		dash.click();
-		
+
 	}
 
 	public String getdahbordtext() {
@@ -50,23 +69,58 @@ public class dashbordpage {
 		return dash.getText();
 	}
 
-	
 	public void clickhubmanager() {
 		hubmngr.click();
 		Allhub.click();
-		
-		
+
 	}
+
 	public void hubmanager() {
 		hubmngr.click();
-		
+
 	}
-	
+
 	public void clicdeliverymanagement() {
-		
+
 		deliverymanagementElement.click();
 		deliverydashbordElement.click();
-		
+
+	}
+
+	public void Click_Billing_History() {
+		billinghistoryElement.click();
+	}
+
+	public void Click_invoice() {
+		invoicElement.click();
+	}
+
+	public void Click__Customer_Management() {
+		customer_ManagementElement.click();
+	}
+
+	public void Click__Customer() {
+		customerElement.click();
+	}
+
+	public void Click_Product_Catalog() {
+		product_catalogElement.click();
+
+	}
+
+	public void Click_Category() {
+		categoryElement.click();
+
+	}
+
+	public void Click_Inventory_Management() {
+		inventory_ManagmentElement.click();
+
+	}
+
+	public void click_Warehouse() {
+		warehousElement.click();
+
 	}
 
 }

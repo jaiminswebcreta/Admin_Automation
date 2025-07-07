@@ -22,6 +22,20 @@ public class Delivery_Dashboard_page {
 		@FindBy(xpath = "(//span[normalize-space()='Delivery Transfer'])[1]")
 		WebElement deliverytransferElement;
 		
+		@FindBy(xpath = "(//span[normalize-space()='Optimize Route'])[1]")
+		WebElement optimizaElement;
+		
+		@FindBy(xpath = "(//span[normalize-space()='Manual Route'])[1]")
+		WebElement manualroutElement;
+		
+		@FindBy(xpath = "(//span[normalize-space()='Order History'])[1]")
+		WebElement orderhistoryElement;
+		
+		@FindBy(xpath = "(//span[normalize-space()='Route Assignment'])[1]")
+		WebElement routeassignmentElement;
+		@FindBy(xpath = "(//span[normalize-space()='Master Route'])[1]")
+		WebElement masterroutElement;
+		
 		
 		
 		
@@ -36,4 +50,26 @@ public class Delivery_Dashboard_page {
 			deliverytransferElement.click();
 			
 		}
+		public void clickoptimize() {
+			optimizaElement.click();
+			
+		}
+		public void clickmanulroute() {
+			manualroutElement.click();
+			
+		}
+		public void clickorderhistory() {
+			orderhistoryElement.click();
+			
+		}
+		public void clickrouteAssis() {
+			routeassignmentElement.click();
+			
+		}
+		public void clickmasterroute() {
+			masterroutElement.click();
+			
+		}         
+		
+		
 }

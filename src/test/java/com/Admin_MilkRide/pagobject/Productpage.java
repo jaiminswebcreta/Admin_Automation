@@ -20,6 +20,7 @@ public class Productpage {
 	@FindBy(xpath = "(//a[normalize-space()='Contacts'])[1]")
 	WebElement contactsElement;
 	
+	
 	//Action perform
 	
 	public boolean addproductbtnvisiable() {
