@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.Admin_MilkRide.pagobject.Accountpage;
+import com.Admin_MilkRide.pagobject.Attributes_page;
 import com.Admin_MilkRide.pagobject.Brand_page;
 import com.Admin_MilkRide.pagobject.Category_page;
 import com.Admin_MilkRide.pagobject.Contactpage;
@@ -16,6 +17,7 @@ import com.Admin_MilkRide.pagobject.Customer_Page;
 import com.Admin_MilkRide.pagobject.Delivery_Dashboard_page;
 import com.Admin_MilkRide.pagobject.Disablearea;
 import com.Admin_MilkRide.pagobject.Documentpage;
+import com.Admin_MilkRide.pagobject.Flexproduct_Setting_page;
 import com.Admin_MilkRide.pagobject.Hublistpage;
 import com.Admin_MilkRide.pagobject.Invoice_Page;
 import com.Admin_MilkRide.pagobject.Locationpage;
@@ -28,6 +30,7 @@ import com.Admin_MilkRide.pagobject.Quick_product_page;
 import com.Admin_MilkRide.pagobject.Subscrption_page;
 import com.Admin_MilkRide.pagobject.Supplier_Page;
 import com.Admin_MilkRide.pagobject.Warehouse_page;
+import com.Admin_MilkRide.pagobject.WorkingDay_Page;
 import com.Admin_MilkRide.pagobject.dashbordpage;
 import com.Admin_MilkRide.pagobject.hubinfopage;
 
@@ -507,10 +510,10 @@ public class Admin_Allmodule extends Baseclass {
 			softAssert.assertAll();
 		}
 
-	}   
-	
+	}
+
 	@Test(dependsOnMethods = "Customer_Managemnt", alwaysRun = true)
-	
+
 	public void Inventory_Managment() throws IOException, InterruptedException {
 		try {
 
@@ -525,7 +528,7 @@ public class Admin_Allmodule extends Baseclass {
 
 			WP.isaddwarehouse();
 			WP.Click_Supplier();
-			
+
 			String suplierString = driver.getCurrentUrl();
 			logger.info("Supplier page URL: " + suplierString);
 
@@ -533,13 +536,10 @@ public class Admin_Allmodule extends Baseclass {
 			sup.Click_Purchase_Inventory();
 			String supllierString = driver.getCurrentUrl();
 			logger.info("Purchase Inventory page URL: " + supllierString);
-			
-			Purchase_Page pup = new  Purchase_Page(driver);
-			
+
+			Purchase_Page pup = new Purchase_Page(driver);
+
 			pup.isaddpurchase();
-			
-				
-			
 
 			dp.clickdashbord();
 			logger.info("Inventory_Managment Module Finish...click on dashborad");
@@ -549,6 +549,79 @@ public class Admin_Allmodule extends Baseclass {
 			e.printStackTrace(); // Print stack trace in console for debugging
 			try {
 				captureScreenShot(driver, "Inventory_Managment");
+			} catch (IOException ioException) {
+				logger.error("Screenshot capture failed: " + ioException.getMessage());
+			}
+
+			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
+			// reused
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.fail("Error due to: " + e.getMessage());
+
+			// ✅ Assert all to collect the result and allow the test to fail gracefully
+			softAssert.assertAll();
+		}
+
+	}
+
+	@Test(dependsOnMethods = "Inventory_Managment", alwaysRun = true)
+
+	public void FlexProduct_Plan() throws IOException, InterruptedException {
+		try {
+
+			dashbordpage dp = new dashbordpage(driver);
+
+			dp.Click_Flexproduct();
+			dp.Click_Settings();
+			String settingString = driver.getCurrentUrl();
+			logger.info("Setting page URL: " + settingString);
+
+			Flexproduct_Setting_page Fsp = new Flexproduct_Setting_page(driver);
+
+			String subsettingString = Fsp.getSubsetting();
+
+			if (subsettingString.equals("Subscription Settings")) {
+
+				logger.info("Flexproduct_Setting_page sucefully - Passed ");
+				Assert.assertTrue(true);
+
+			} else {
+				logger.info("Flexproduct_Setting_page sucefully - failed ");
+				captureScreenShot(driver, "FlexProduct_Plan");
+				Assert.assertTrue(false);
+			}
+
+			Fsp.Click_Attributes();
+			String attributeString = driver.getCurrentUrl();
+			logger.info("Attributes page URL: " + attributeString);
+
+			// After navigating to the Attributes page
+			Attributes_page attrPage = new Attributes_page(driver);
+			boolean isAddAttrVisible = attrPage.isAddAttributeDisplayed();
+			logger.info("Add Attribute button displayed: " + isAddAttrVisible);
+			Assert.assertTrue(isAddAttrVisible, "Add Attribute button is not visible");
+
+			attrPage.click_Workingday();
+
+			WorkingDay_Page wdp = new WorkingDay_Page(driver);
+
+			// Verify the Working Days header
+			String headerText = wdp.getWorkingDaysHeaderText();
+			Assert.assertEquals(headerText, "Working Days", "Working Days header not found");
+
+			
+// Click the Plan Slot element
+			wdp.clickPlanSlot();
+			logger.info("Clicked on Plan Slot");
+
+			dp.clickdashbord();
+			logger.info("FlexProduct_Plan Module Finish...click on dashborad");
+
+		} catch (Exception e) {
+			logger.error("Exception occurred in FlexProduct_Plan: " + e.getMessage());
+			e.printStackTrace(); // Print stack trace in console for debugging
+			try {
+				captureScreenShot(driver, "FlexProduct_Plan");
 			} catch (IOException ioException) {
 				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}

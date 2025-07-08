@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-07T19:04:51 IST" name="Suite" finished-at="2025-07-07T19:06:03 IST" duration-ms="72199">
+  <suite started-at="2025-07-08T19:37:47 IST" name="Default suite" finished-at="2025-07-08T19:39:18 IST" duration-ms="90806">
     <groups>
     </groups>
-    <test started-at="2025-07-07T19:04:51 IST" name="Test" finished-at="2025-07-07T19:06:03 IST" duration-ms="72199">
+    <test started-at="2025-07-08T19:37:47 IST" name="Default test" finished-at="2025-07-08T19:39:18 IST" duration-ms="90806">
       <class name="com.Admin_MilkRide.Module.Admin_Allmodule">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:04:52 IST" name="setup" finished-at="2025-07-07T19:05:08 IST" duration-ms="15813" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:37:48 IST" name="setup" finished-at="2025-07-08T19:38:05 IST" duration-ms="17699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginAdminpenal()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:08 IST" name="LoginAdminpenal" finished-at="2025-07-07T19:05:10 IST" duration-ms="2543" status="PASS">
+        <test-method signature="LoginAdminpenal()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:05 IST" name="LoginAdminpenal" finished-at="2025-07-08T19:38:14 IST" duration-ms="8323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAdminpenal -->
-        <test-method signature="Hubmanager()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:10 IST" name="Hubmanager" finished-at="2025-07-07T19:05:16 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.LoginAdminpenal" duration-ms="6081" status="PASS">
+        <test-method signature="Hubmanager()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:14 IST" name="Hubmanager" finished-at="2025-07-08T19:38:24 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.LoginAdminpenal" duration-ms="10216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hubmanager -->
-        <test-method signature="HubInfo()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:16 IST" name="HubInfo" finished-at="2025-07-07T19:05:28 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Hubmanager" duration-ms="11877" status="PASS">
+        <test-method signature="HubInfo()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:24 IST" name="HubInfo" finished-at="2025-07-08T19:38:39 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Hubmanager" duration-ms="15253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HubInfo -->
-        <test-method signature="Delivery_Management()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:28 IST" name="Delivery_Management" finished-at="2025-07-07T19:05:34 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.HubInfo" duration-ms="6276" status="PASS">
+        <test-method signature="Delivery_Management()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:39 IST" name="Delivery_Management" finished-at="2025-07-08T19:38:46 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.HubInfo" duration-ms="6987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Delivery_Management -->
-        <test-method signature="Billing_History()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:35 IST" name="Billing_History" finished-at="2025-07-07T19:05:37 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Delivery_Management" duration-ms="2444" status="PASS">
+        <test-method signature="Billing_History()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:46 IST" name="Billing_History" finished-at="2025-07-08T19:38:49 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Delivery_Management" duration-ms="2769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Billing_History -->
-        <test-method signature="Customer_Managemnt()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:37 IST" name="Customer_Managemnt" finished-at="2025-07-07T19:05:46 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Billing_History" duration-ms="8942" status="PASS">
+        <test-method signature="Customer_Managemnt()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:49 IST" name="Customer_Managemnt" finished-at="2025-07-08T19:38:58 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Billing_History" duration-ms="8729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Customer_Managemnt -->
-        <test-method signature="Inventory_Managment()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:46 IST" name="Inventory_Managment" finished-at="2025-07-07T19:05:51 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Customer_Managemnt" duration-ms="4949" status="PASS">
+        <test-method signature="Inventory_Managment()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:38:58 IST" name="Inventory_Managment" finished-at="2025-07-08T19:39:02 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Customer_Managemnt" duration-ms="4470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Inventory_Managment -->
-        <test-method signature="Product_Catalogs()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:05:51 IST" name="Product_Catalogs" finished-at="2025-07-07T19:06:03 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Customer_Managemnt" duration-ms="11753" status="PASS">
+        <test-method signature="Product_Catalogs()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:39:02 IST" name="Product_Catalogs" finished-at="2025-07-08T19:39:12 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Customer_Managemnt" duration-ms="9735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Product_Catalogs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-07T19:06:03 IST" name="tearDown" finished-at="2025-07-07T19:06:03 IST" duration-ms="753" status="PASS">
+        <test-method signature="FlexProduct_Plan()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:39:12 IST" name="FlexProduct_Plan" finished-at="2025-07-08T19:39:17 IST" depends-on-methods="com.Admin_MilkRide.Module.Admin_Allmodule.Inventory_Managment" duration-ms="4805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlexProduct_Plan -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Admin_MilkRide.Module.Admin_Allmodule@5f8e8a9d]" started-at="2025-07-08T19:39:17 IST" name="tearDown" finished-at="2025-07-08T19:39:18 IST" duration-ms="1208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Admin_MilkRide.Module.Admin_Allmodule -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
