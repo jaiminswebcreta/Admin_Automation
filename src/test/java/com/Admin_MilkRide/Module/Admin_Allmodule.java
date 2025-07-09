@@ -9,6 +9,7 @@ import org.testng.asserts.SoftAssert;
 
 import com.Admin_MilkRide.pagobject.Accountpage;
 import com.Admin_MilkRide.pagobject.Attributes_page;
+import com.Admin_MilkRide.pagobject.Banner_Page;
 import com.Admin_MilkRide.pagobject.Brand_page;
 import com.Admin_MilkRide.pagobject.Category_page;
 import com.Admin_MilkRide.pagobject.Contactpage;
@@ -17,16 +18,27 @@ import com.Admin_MilkRide.pagobject.Customer_Page;
 import com.Admin_MilkRide.pagobject.Delivery_Dashboard_page;
 import com.Admin_MilkRide.pagobject.Disablearea;
 import com.Admin_MilkRide.pagobject.Documentpage;
+import com.Admin_MilkRide.pagobject.FlexProductSubscription_Page;
 import com.Admin_MilkRide.pagobject.Flexproduct_Setting_page;
 import com.Admin_MilkRide.pagobject.Hublistpage;
 import com.Admin_MilkRide.pagobject.Invoice_Page;
+import com.Admin_MilkRide.pagobject.LM_Area_Page;
+import com.Admin_MilkRide.pagobject.LM_Locations_page;
+import com.Admin_MilkRide.pagobject.LM_Route_Page;
+import com.Admin_MilkRide.pagobject.Location_Rigion_page;
 import com.Admin_MilkRide.pagobject.Locationpage;
 import com.Admin_MilkRide.pagobject.Loginpage;
 import com.Admin_MilkRide.pagobject.Order_page;
+import com.Admin_MilkRide.pagobject.PlanSlot_Page;
 import com.Admin_MilkRide.pagobject.Product_pagenew;
 import com.Admin_MilkRide.pagobject.Productpage;
 import com.Admin_MilkRide.pagobject.Purchase_Page;
 import com.Admin_MilkRide.pagobject.Quick_product_page;
+import com.Admin_MilkRide.pagobject.Report_ActivityLogs_Page;
+import com.Admin_MilkRide.pagobject.Report_CustomerInformation_Page;
+import com.Admin_MilkRide.pagobject.Report_CustomerWallet_Page;
+import com.Admin_MilkRide.pagobject.Report_Lowcredit_Page;
+import com.Admin_MilkRide.pagobject.Reports_Page;
 import com.Admin_MilkRide.pagobject.Subscrption_page;
 import com.Admin_MilkRide.pagobject.Supplier_Page;
 import com.Admin_MilkRide.pagobject.Warehouse_page;
@@ -36,9 +48,10 @@ import com.Admin_MilkRide.pagobject.hubinfopage;
 
 @Listeners(com.Admin_MilkRide.Utilities.ExtentListenerClass.class)
 public class Admin_Allmodule extends Baseclass {
-	@Test
+	@Test(priority = 1)
 
 	public void LoginAdminpenal() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			Loginpage Lp = new Loginpage(driver);
@@ -70,12 +83,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (Dashbordvf.equals("Dashboard")) {
 
 				logger.info("login sucefully - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Dashborad text matched");
 
 			} else {
 				logger.info("login sucefully - failed ");
 				captureScreenShot(driver, "LoginAdminpenal");
-				Assert.assertTrue(false);
+				softAssert.fail("Dashbord text mis match mismatch");
 			}
 
 		} catch (Exception e) {
@@ -86,12 +99,14 @@ public class Admin_Allmodule extends Baseclass {
 			} catch (IOException ioException) {
 				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}
-			Assert.fail("Test failed due to unexpected exception: " + e.getMessage());
+			softAssert.fail("Test failed due to unexpected exception: " + e.getMessage());
 		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(dependsOnMethods = "LoginAdminpenal", alwaysRun = true)
+	@Test(priority = 2)
 	public void Hubmanager() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -106,12 +121,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (hublistvrf.equals("Hubs List")) {
 
 				logger.info("Hub listpage sucefully open - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Hub list text matched");
 
 			} else {
 				logger.info("Hub listpage sucefully open  - failed ");
 				captureScreenShot(driver, "Hub Manager");
-				Assert.assertTrue(false);
+				softAssert.fail("Hub list text mismatch");
 			}
 
 			hp.clickfirsthub();
@@ -128,10 +143,12 @@ public class Admin_Allmodule extends Baseclass {
 			}
 			Assert.fail("Test failed due to unexpected exception: " + e.getMessage());
 		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(dependsOnMethods = "Hubmanager", alwaysRun = true)
+	@Test(priority = 3)
 	public void HubInfo() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			hubinfopage hip = new hubinfopage(driver);
@@ -141,12 +158,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (hubinfoString.equals(hubinfoString)) {
 
 				logger.info("Hubinfo page sucefully open - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Hubinfo text matched");
 
 			} else {
 				logger.info("Hubinfo sucefully open  - failed ");
 				captureScreenShot(driver, "LoginAdminpenal");
-				Assert.assertTrue(false);
+				softAssert.fail("Hubinfo text mismatch");
 			}
 
 			hip.clickaccount();
@@ -221,13 +238,15 @@ public class Admin_Allmodule extends Baseclass {
 			} catch (IOException ioException) {
 				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}
-			Assert.fail("Test failed due to unexpected exception: " + e.getMessage());
+			softAssert.fail("Test failed due to unexpected exception: " + e.getMessage());
 		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 
 	}
 
-	@Test(dependsOnMethods = "HubInfo", alwaysRun = true)
+	@Test(priority = 4)
 	public void Delivery_Management() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -243,12 +262,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (deliverydash.equals("Delivery Dashboard")) {
 
 				logger.info("Deivery dashborad page sucefully open - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Delivery Dashboard text matched");
 
 			} else {
 				logger.info("Deivery dashborad page sucefully openn  - failed ");
 				captureScreenShot(driver, "Delivery_Management");
-				Assert.assertTrue(false);
+				softAssert.fail("Delivery Dashboard text mismatch");
 			}
 
 			DDp.clickDeliveryTransfer();
@@ -295,16 +314,16 @@ public class Admin_Allmodule extends Baseclass {
 
 			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
 			// reused
-			SoftAssert softAssert = new SoftAssert();
+
 			softAssert.fail("Error due to: " + e.getMessage());
 
-			// ✅ Assert all to collect the result and allow the test to fail gracefully
-			softAssert.assertAll();
 		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(dependsOnMethods = "Delivery_Management", alwaysRun = true)
+	@Test(priority = 5)
 	public void Billing_History() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -321,12 +340,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (Invoicepageheading.equals("Invoice List")) {
 
 				logger.info("Invoice List page sucefully open - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Invoice List text matched");
 
 			} else {
 				logger.info("Invoice List page sucefully openn  - failed ");
 				captureScreenShot(driver, "Delivery_Management");
-				Assert.assertTrue(false);
+				softAssert.fail("Invoice List text mismatch");
 			}
 			dp.clickdashbord();
 			logger.info("Billing_History Module Finish...click on dashborad");
@@ -342,16 +361,16 @@ public class Admin_Allmodule extends Baseclass {
 
 			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
 			// reused
-			SoftAssert softAssert = new SoftAssert();
+
 			softAssert.fail("Error due to: " + e.getMessage());
 
-			// ✅ Assert all to collect the result and allow the test to fail gracefully
-			softAssert.assertAll();
 		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(dependsOnMethods = "Billing_History", alwaysRun = true)
+	@Test(priority = 6)
 	public void Customer_Managemnt() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -368,12 +387,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (Customerpageheading.equals("Customers List")) {
 
 				logger.info("Customers List page sucefully open - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Customers List text matched");
 
 			} else {
 				logger.info("Customers List page sucefully openn  - failed ");
 				captureScreenShot(driver, "Customer_Managemnt");
-				Assert.assertTrue(false);
+				softAssert.fail("Customers List text mismatch");
 			}
 
 			cp.isaddcustomerd();
@@ -413,12 +432,11 @@ public class Admin_Allmodule extends Baseclass {
 			if (orderinvoicetextString.equals("Invoice List")) {
 
 				logger.info("Invoice list sucefully open - Passed ");
-				Assert.assertTrue(true);
-
+				softAssert.assertTrue(true, "Invoice List text matched");
 			} else {
 				logger.info("Invoice list sucefully open  - failed ");
 				captureScreenShot(driver, "Invoice List");
-				Assert.assertTrue(false);
+				softAssert.fail("Invoice List text mismatch");
 			}
 
 			dp.clickdashbord();
@@ -433,19 +451,17 @@ public class Admin_Allmodule extends Baseclass {
 				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}
 
-			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
-			// reused
-			SoftAssert softAssert = new SoftAssert();
 			softAssert.fail("Error due to: " + e.getMessage());
 
 			// ✅ Assert all to collect the result and allow the test to fail gracefully
-			softAssert.assertAll();
-		}
 
+		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(dependsOnMethods = "Customer_Managemnt", alwaysRun = true)
+	@Test(priority = 7)
 	public void Product_Catalogs() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -481,12 +497,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (productlisttextString.equals("Product List")) {
 
 				logger.info("Product list sucefully open - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Product List text matched");
 
 			} else {
 				logger.info("Product list sucefully open  - failed ");
 				captureScreenShot(driver, "Product List");
-				Assert.assertTrue(false);
+				softAssert.fail("Product List text mismatch");
 			}
 
 			dp.clickdashbord();
@@ -501,20 +517,18 @@ public class Admin_Allmodule extends Baseclass {
 				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}
 
-			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
-			// reused
-			SoftAssert softAssert = new SoftAssert();
 			softAssert.fail("Error due to: " + e.getMessage());
 
 			// ✅ Assert all to collect the result and allow the test to fail gracefully
-			softAssert.assertAll();
-		}
 
+		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(dependsOnMethods = "Customer_Managemnt", alwaysRun = true)
+	@Test(priority = 8)
 
 	public void Inventory_Managment() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -553,20 +567,16 @@ public class Admin_Allmodule extends Baseclass {
 				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}
 
-			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
-			// reused
-			SoftAssert softAssert = new SoftAssert();
 			softAssert.fail("Error due to: " + e.getMessage());
 
-			// ✅ Assert all to collect the result and allow the test to fail gracefully
-			softAssert.assertAll();
 		}
+		softAssert.assertAll();
 
 	}
 
-	@Test(dependsOnMethods = "Inventory_Managment", alwaysRun = true)
-
+	@Test(priority = 9)
 	public void FlexProduct_Plan() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
 			dashbordpage dp = new dashbordpage(driver);
@@ -583,12 +593,12 @@ public class Admin_Allmodule extends Baseclass {
 			if (subsettingString.equals("Subscription Settings")) {
 
 				logger.info("Flexproduct_Setting_page sucefully - Passed ");
-				Assert.assertTrue(true);
+				softAssert.assertTrue(true, "Flexproduct Setting text matched");
 
 			} else {
 				logger.info("Flexproduct_Setting_page sucefully - failed ");
 				captureScreenShot(driver, "FlexProduct_Plan");
-				Assert.assertTrue(false);
+				softAssert.fail("Flexproduct Setting text mismatch");
 			}
 
 			Fsp.Click_Attributes();
@@ -599,20 +609,47 @@ public class Admin_Allmodule extends Baseclass {
 			Attributes_page attrPage = new Attributes_page(driver);
 			boolean isAddAttrVisible = attrPage.isAddAttributeDisplayed();
 			logger.info("Add Attribute button displayed: " + isAddAttrVisible);
-			Assert.assertTrue(isAddAttrVisible, "Add Attribute button is not visible");
+			softAssert.assertTrue(isAddAttrVisible, "Add Attribute button is not displayed");
 
 			attrPage.click_Workingday();
+			String workingDayUrl = driver.getCurrentUrl();
+
+			logger.info("Working Day page URL: " + workingDayUrl);
+
+			// After navigating to the Working Day page
 
 			WorkingDay_Page wdp = new WorkingDay_Page(driver);
 
 			// Verify the Working Days header
 			String headerText = wdp.getWorkingDaysHeaderText();
-			Assert.assertEquals(headerText, "Working Days", "Working Days header not found");
+			softAssert.assertEquals(headerText, "Working Days", "Working Days header not found");
 
-			
-// Click the Plan Slot element
+			// Click the Plan Slot element
 			wdp.clickPlanSlot();
 			logger.info("Clicked on Plan Slot");
+
+			String planSlotUrl = driver.getCurrentUrl();
+			logger.info("Plan Slot page URL: " + planSlotUrl);
+
+			// Verify the Plan Slot header
+
+			// Verify the Plan Slot header
+			PlanSlot_Page planSlotPage = new PlanSlot_Page(driver);
+			String planSlotHeader = planSlotPage.getPlanSlotsListHeaderText();
+			softAssert.assertEquals(planSlotHeader, "Plan Slots List", "Plan Slot header not found");
+			logger.info("Plan Slot header verified successfully");
+			// Click the Subscription List span
+			planSlotPage.clickSubscriptionList();
+			logger.info("Clicked on Subscription List");
+			String subscriptionListUrl = driver.getCurrentUrl();
+			logger.info("Subscription List page URL: " + subscriptionListUrl);
+
+			FlexProductSubscription_Page flexProductSubscriptionPage = new FlexProductSubscription_Page(driver);
+			// Verify the FlexProduct Plans header
+			String flexProductPlansText = flexProductSubscriptionPage.getFlexProductPlansText();
+
+			softAssert.assertEquals(flexProductPlansText, "FlexProduct Plans", "FlexProduct Plans header not found");
+			logger.info("FlexProduct Plans header verified successfully");
 
 			dp.clickdashbord();
 			logger.info("FlexProduct_Plan Module Finish...click on dashborad");
@@ -628,13 +665,302 @@ public class Admin_Allmodule extends Baseclass {
 
 			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
 			// reused
-			SoftAssert softAssert = new SoftAssert();
+
+			softAssert.fail("Error due to: " + e.getMessage());
+
+			// ✅ Assert all to collect the result and allow the test to fail gracefully
+
+		}
+		softAssert.assertAll();
+
+	}
+
+	@Test(priority = 10)
+	public void Banner() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
+		try {
+			dashbordpage dp = new dashbordpage(driver);
+
+			dp.Click_Banner();
+			String bannerString = driver.getCurrentUrl();
+			logger.info("Banner page URL: " + bannerString);
+			Banner_Page bp = new Banner_Page(driver);
+
+			String bannerText = bp.getBannerHeaderText();
+			if (bannerText.equals("Banner List")) {
+				logger.info("Banner page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Banner List text matched");
+			} else {
+				logger.info("Banner page sucefully open  - failed ");
+				captureScreenShot(driver, "Banner");
+				softAssert.fail("Banner List text mismatch");
+			}
+			bp.isAddBannerDisplayed();
+			logger.info("Add Banner button is displayed");
+			dp.clickdashbord();
+			logger.info("Banner Module Finish...click on dashborad");
+
+		} catch (Exception e) {
+			logger.error("Exception occurred in Banner: " + e.getMessage());
+			e.printStackTrace(); // Print stack trace in console for debugging
+			try {
+				captureScreenShot(driver, "Banner");
+			} catch (IOException ioException) {
+				logger.error("Screenshot capture failed: " + ioException.getMessage());
+			}
+
 			softAssert.fail("Error due to: " + e.getMessage());
 
 			// ✅ Assert all to collect the result and allow the test to fail gracefully
 			softAssert.assertAll();
 		}
-
+		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
+	@Test(priority = 11)
+
+	public void Locations_Manager() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
+		try {
+			dashbordpage dp = new dashbordpage(driver);
+
+			dp.clickLocationManager();
+			dp.clickRegion();
+			String regionString = driver.getCurrentUrl();
+
+			logger.info("Region page URL: " + regionString);
+
+			Location_Rigion_page rp = new Location_Rigion_page(driver);
+			String regionText = rp.getRegionsHeaderText();
+
+			if (regionText.equals("Regions List")) {
+				logger.info("Region page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Region List text matched");
+			} else {
+				logger.info("Region page sucefully open  - failed ");
+				captureScreenShot(driver, "Region");
+				softAssert.fail("Region List text mismatch");
+			}
+			rp.isAddRegionVisible();
+			logger.info("Add Region button is displayed");
+			rp.clickLocation();
+			logger.info("Clicked on Location");
+			String locationString = driver.getCurrentUrl();
+			logger.info("Location page URL: " + locationString);
+			LM_Locations_page lp = new LM_Locations_page(driver);
+			String locationsListText = lp.getLocationsListHeaderText();
+
+			if (locationsListText.equals("Locations List")) {
+				logger.info("Locations page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Locations List text matched");
+			} else {
+				logger.info("Locations page sucefully open  - failed ");
+				captureScreenShot(driver, "Locations");
+				softAssert.fail("Locations List text mismatch");
+			}
+			lp.isAddLocationDisplayed();
+			logger.info("Add Location button is displayed");
+			lp.clickArea();
+			logger.info("Clicked on Area");
+			String areaString = driver.getCurrentUrl();
+			logger.info("Area page URL: " + areaString);
+
+			LM_Area_Page ap = new LM_Area_Page(driver);
+
+			// Verify the Area page header
+			String areaHeaderText = ap.getAreasHeaderText();
+			logger.info("Area List Header Text: " + areaHeaderText);
+
+			// Verify the Area page header
+			if (areaHeaderText.equals("Areas List")) {
+				logger.info("Area page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Area List text matched");
+			} else {
+				logger.info("Area page sucefully open  - failed ");
+				captureScreenShot(driver, "Area");
+				softAssert.fail("Area List text mismatch");
+			}
+
+			ap.isAddAreaVisible();
+
+			logger.info("Add Area button is displayed");
+			ap.clickRoute();
+
+			logger.info("Clicked on Route");
+			String routeString = driver.getCurrentUrl();
+
+			logger.info("Route page URL: " + routeString);
+
+			LM_Route_Page rp1 = new LM_Route_Page(driver);
+
+			// Verify the Routes page header
+			String routesHeaderText = rp1.getRoutesHeaderText();
+			logger.info("Routes Header Text: " + routesHeaderText);
+			// Verify the Routes page header
+			if (routesHeaderText.equals("Routes List")) {
+				logger.info("Routes page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Routes List text matched");
+			} else {
+				logger.info("Routes page sucefully open  - failed ");
+				captureScreenShot(driver, "Routes");
+				softAssert.fail("Routes List text mismatch");
+			}
+			rp1.isAddRouteDisplayed();
+			logger.info("Add Route button is displayed");
+
+			dp.clickdashbord();
+			logger.info("Locations_Manager Module Finish...click on dashborad");
+
+		} catch (Exception e) {
+			logger.error("Exception occurred in Banner: " + e.getMessage());
+			e.printStackTrace(); // Print stack trace in console for debugging
+			try {
+				captureScreenShot(driver, "Banner");
+			} catch (IOException ioException) {
+				logger.error("Screenshot capture failed: " + ioException.getMessage());
+			}
+
+			// ⚠️ Create SoftAssert outside the try-catch block to avoid scope issues if
+			// reused
+
+			softAssert.fail("Error due to: " + e.getMessage());
+
+			// ✅ Assert all to collect the result and allow the test to fail gracefully
+
+		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
+	}
+
+	@Test(priority = 12)
+	public void Report_Module() throws IOException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
+		try {
+
+			dashbordpage dp = new dashbordpage(driver);
+
+			dp.clickReports();
+			String reportString = driver.getCurrentUrl();
+			logger.info("Report page URL: " + reportString);
+
+			// Verify the Reports List header text
+			// Create an instance of the Report_ReportsList_Page class
+			Reports_Page rrp = new Reports_Page(driver);
+			String reportsListText = rrp.getReportsListHeaderText();
+			logger.info("Reports List Header Text: " + reportsListText);
+			// Verify the Reports List header text
+			if (reportsListText.equals("Reports List")) {
+				logger.info("Reports List page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Reports List text matched");
+			} else {
+				logger.info("Reports List page sucefully open  - failed ");
+				captureScreenShot(driver, "Reports List");
+				softAssert.fail("Reports List text mismatch");
+			}
+			rrp.isCustomerReportsVisible();
+			logger.info("Customer Reports text is displayed");
+
+			rrp.clickCustomerWallet();
+			String customerWalletString = driver.getCurrentUrl();
+			logger.info("Customer Wallet page URL: " + customerWalletString);
+
+			// Create an instance of the Report_CustomerWallet_Page class
+			Report_CustomerWallet_Page rcwp = new Report_CustomerWallet_Page(driver);
+			String customerWalletText = rcwp.getCustomerWalletReportHeaderText();
+			if (customerWalletText.equals("Customer Wallet List")) {
+				logger.info("Customer Wallet page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Customer Wallet List text matched");
+			} else {
+				logger.info("Customer Wallet page sucefully open  - failed ");
+				captureScreenShot(driver, "Customer Wallet List");
+				softAssert.fail("Customer Wallet List text mismatch");
+			}
+			rcwp.isExportCSV();
+			logger.info("Export CSV button is displayed");
+
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+
+			rrp.clickCustomerInformationReports();
+			String customerInformationString = driver.getCurrentUrl();
+			logger.info("Customer Information page URL: " + customerInformationString);
+			// Create an instance of the Report_CustomerInformationReports_Page class
+			Report_CustomerInformation_Page rcip = new Report_CustomerInformation_Page(driver);
+			String customerInformationText = rcip.getCustomerInformationReportHeaderText();
+			if (customerInformationText.equals("Customer Information")) {
+				logger.info("Customer Information page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Customer Information text matched");
+			} else {
+				logger.info("Customer Information page sucefully open  - failed ");
+				captureScreenShot(driver, "Customer Information");
+				softAssert.fail("Customer Information text mismatch");
+			}
+			rcip.isExportCSV();
+			logger.info("Export CSV button is displayed");
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+			rrp.clickActivityLogReports();
+			logger.info("Clicked on Activity Logs");
+
+			// Create an instance of the Report_ActivityLogs_Page class
+			String activityLogsUrl = driver.getCurrentUrl();
+			logger.info("Activity Logs page URL: " + activityLogsUrl);
+
+			// Create an instance of the Report_ActivityLogs_Page class
+			Report_ActivityLogs_Page rap = new Report_ActivityLogs_Page(driver);
+
+			// Verify the Activity List header text
+			String activityLogText = rap.getActivityLogHeaderText();
+			logger.info("Activity Log Header Text: " + activityLogText);
+			if (activityLogText.equals("Activity List")) {
+				logger.info("Activity Logs page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Activity List text matched");
+			} else {
+				logger.info("Activity Logs page sucefully open  - failed ");
+				captureScreenShot(driver, "Activity List");
+				softAssert.fail("Activity List text mismatch");
+
+			}
+			rap.isExportCSV();
+			logger.info("Export CSV button is displayed");
+
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+
+			rrp.clickLowCreditReports();
+			String lowCreditString = driver.getCurrentUrl();
+			logger.info("Low Credit page URL: " + lowCreditString);
+			// Create an instance of the Report_Lowcredit_Page class
+			Report_Lowcredit_Page rlp = new Report_Lowcredit_Page(driver);
+			String lowCreditText = rlp.getLowCreditReportHeaderText();
+			if (lowCreditText.equals("Low Credit List")) {
+				logger.info("Low Credit page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Low Credit List text matched");
+			} else {
+				logger.info("Low Credit page sucefully open  - failed ");
+				captureScreenShot(driver, "Low Credit");
+				softAssert.fail("Low Credit List text mismatch");
+			}
+
+			rlp.isExportCSV();
+			logger.info("Export CSV button is displayed");
+
+			dp.clickdashbord();
+			logger.info("Report_Module Module Finish...click on dashborad");
+
+		} catch (Exception e) {
+			logger.error("Exception occurred in Report_Module: " + e.getMessage());
+			e.printStackTrace(); // Print stack trace in console for debugging
+			try {
+				captureScreenShot(driver, "Report_Module");
+			} catch (IOException ioException) {
+				logger.error("Screenshot capture failed: " + ioException.getMessage());
+			}
+
+			softAssert.fail("Error due to: " + e.getMessage());
+
+			//
+
+		}
+		softAssert.assertAll(); // ✅ Final step to report any failures
+	}
 }

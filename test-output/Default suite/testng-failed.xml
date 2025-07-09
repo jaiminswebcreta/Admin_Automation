@@ -5,9 +5,18 @@
     <classes>
       <class name="com.Admin_MilkRide.Module.Admin_Allmodule">
         <methods>
+          <include name="FlexProduct_Plan"/>
           <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="Hubmanager"/>
+          <include name="Customer_Managemnt"/>
           <include name="Delivery_Management"/>
+          <include name="setup"/>
+          <include name="Banner"/>
+          <include name="LoginAdminpenal"/>
+          <include name="Inventory_Managment"/>
+          <include name="Locations_Manager"/>
+          <include name="HubInfo"/>
+          <include name="Billing_History"/>
         </methods>
       </class> <!-- com.Admin_MilkRide.Module.Admin_Allmodule -->
     </classes>

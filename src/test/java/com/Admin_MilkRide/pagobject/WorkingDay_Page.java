@@ -15,25 +15,23 @@ public class WorkingDay_Page {
 
 		PageFactory.initElements(rDriver, this);
 	}
-	// identify webelements
+	 // "Working Days" header WebElement
+    @FindBy(xpath = "(//h1[normalize-space()='Working Days'])[1]")
+    private WebElement workingDaysHeader;
+    @FindBy(xpath = "(//span[normalize-space()='Plan Slot'])[1]")
+    private WebElement planSlotSpan;
 
-	@FindBy(xpath = "(//h1[normalize-space()='Working Days'])[1]")
-	WebElement workingDaysHeader;
-	
-	@FindBy(xpath = "(//span[normalize-space()='Plan Slot'])[1]")
-	WebElement planSlotSpan;
+    
+    
 
-	
-	public void clickPlanSlot() {
-    planSlotSpan.click();
-}
+    // Method to get the text of the "Working Days" header
+    public String getWorkingDaysHeaderText() {
+        return workingDaysHeader.getText();
+    }
+     // Method to click the "Plan Slot" span
+        public void clickPlanSlot() {
+            planSlotSpan.click();
+        }
 
-	
-	public String getWorkingDaysHeaderText() {
-    return workingDaysHeader.getText();
-}
-
-	
-	
-
-}
+        
+    }

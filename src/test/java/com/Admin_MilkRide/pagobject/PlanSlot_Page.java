@@ -5,18 +5,34 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class PlanSlot_Page {
-	// Crete object of webdrive
-	WebDriver lDriver;
+    WebDriver lDriver;
 
-	public PlanSlot_Page(WebDriver rDriver) {
+    public PlanSlot_Page(WebDriver rDriver) {
+        lDriver = rDriver;
+        PageFactory.initElements(rDriver, this);
+    }
 
-		lDriver = rDriver;
+    // Plan Slots List h1 WebElement
+    @FindBy(xpath = "(//h1[normalize-space()='Plan Slots List'])[1]")
+    WebElement planSlotsListHeader;
+    // Subscription List span WebElement
+    @FindBy(xpath = "(//span[normalize-space()='Subscription List'])[1]")
+    WebElement subscriptionListSpan;
 
-		PageFactory.initElements(rDriver, this);
+	// Returns the text of the Plan Slots List header
+	public String getPlanSlotsListHeaderText() {
+		return planSlotsListHeader.getText();
 	}
-	// identify webelements
 
-	@FindBy(xpath = "(//h1[normalize-space()='Subscription Settings'])[1]")
-	WebElement subSettingElement;
+// Clicks the Subscription List span
+	public void clickSubscriptionList() {
+    subscriptionListSpan.click();
 }
+
+}
+
+
+
+

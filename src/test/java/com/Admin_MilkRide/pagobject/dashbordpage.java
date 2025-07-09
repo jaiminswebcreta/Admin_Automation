@@ -57,13 +57,33 @@ public class dashbordpage {
 
 	@FindBy(xpath = "(//span[normalize-space()='Warehouse'])[1]")
 	WebElement warehousElement;
-	
+
 	@FindBy(xpath = "(//span[normalize-space()='FlexProduct Plan'])[1]")
 	WebElement felxproductElement;
-	
+
 	@FindBy(xpath = "(//span[normalize-space()='Settings'])[1]")
 	WebElement settingsElement;
+
+	@FindBy(xpath = "(//span[normalize-space()='Banner'])[1]")
+	WebElement bannerElement;
+	@FindBy(xpath = "(//span[contains(text(),'Location Manager')])[1]")
+	WebElement locationManagerElement;
+
+	// Add this to your dashbordpage class
+
+	@FindBy(xpath = "(//span[normalize-space()='Region'])[1]")
+	WebElement regionElement;
 	
+	
+
+	public void clickRegion() {
+		regionElement.click();
+	}
+
+	public void clickLocationManager() {
+		locationManagerElement.click();
+	}
+
 	// Action Performs
 	public void clickdashbord() {
 		dash.click();
@@ -128,15 +148,29 @@ public class dashbordpage {
 		warehousElement.click();
 
 	}
-	
+
 	public void Click_Flexproduct() {
 		felxproductElement.click();
-		
+
 	}
-	
+
 	public void Click_Settings() {
 		settingsElement.click();
-		
+
 	}
+
+	public void Click_Banner() {
+		bannerElement.click();
+
+	}
+	
+	// Add to dashbordpage.java
+
+@FindBy(xpath = "(//span[normalize-space()='Reports'])[1]")
+WebElement reportsElement;
+
+public void clickReports() {
+    reportsElement.click();
+}
 
 }
