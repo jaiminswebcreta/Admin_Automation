@@ -1,4 +1,4 @@
-package com.Admin_MilkRide.pagobject;
+package com.Admin_MilkRide.pagobject.Reports;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

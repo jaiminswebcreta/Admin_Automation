@@ -34,17 +34,32 @@ import com.Admin_MilkRide.pagobject.Product_pagenew;
 import com.Admin_MilkRide.pagobject.Productpage;
 import com.Admin_MilkRide.pagobject.Purchase_Page;
 import com.Admin_MilkRide.pagobject.Quick_product_page;
-import com.Admin_MilkRide.pagobject.Report_ActivityLogs_Page;
-import com.Admin_MilkRide.pagobject.Report_CustomerInformation_Page;
-import com.Admin_MilkRide.pagobject.Report_CustomerWallet_Page;
-import com.Admin_MilkRide.pagobject.Report_Lowcredit_Page;
-import com.Admin_MilkRide.pagobject.Reports_Page;
 import com.Admin_MilkRide.pagobject.Subscrption_page;
 import com.Admin_MilkRide.pagobject.Supplier_Page;
 import com.Admin_MilkRide.pagobject.Warehouse_page;
 import com.Admin_MilkRide.pagobject.WorkingDay_Page;
 import com.Admin_MilkRide.pagobject.dashbordpage;
 import com.Admin_MilkRide.pagobject.hubinfopage;
+import com.Admin_MilkRide.pagobject.Reports.Report_ActivityLogs_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_CancelledOrder_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_CashCollections_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_CumulativeSales_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_CustomerInformation_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_CustomerVacation_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_CustomerWallet_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_DeliveriesInformation_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_FutureOrders_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_ImageProof_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_Lowcredit_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_OrderInformation_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_OrdersSheet_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_PredictiveAnalysis_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_ReverseLogistic_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_SubscriptionEnd_page;
+import com.Admin_MilkRide.pagobject.Reports.Report_Subscription_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_Transactions_Page;
+import com.Admin_MilkRide.pagobject.Reports.Report_WalletPayment_Page;
+import com.Admin_MilkRide.pagobject.Reports.Reports_Page;
 
 @Listeners(com.Admin_MilkRide.Utilities.ExtentListenerClass.class)
 public class Admin_Allmodule extends Baseclass {
@@ -54,6 +69,8 @@ public class Admin_Allmodule extends Baseclass {
 		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
 
+			try {
+				captureScreenShot(driver, "LoginAdminpenal_Exception");
 			Loginpage Lp = new Loginpage(driver);
 			Lp.EnterEmail("ruralbloomroots@gmail.com");// 9316033469
 			logger.info("Fill Email");
@@ -89,6 +106,9 @@ public class Admin_Allmodule extends Baseclass {
 				logger.info("login sucefully - failed ");
 				captureScreenShot(driver, "LoginAdminpenal");
 				softAssert.fail("Dashbord text mis match mismatch");
+			}
+			} catch (IOException ioException) {
+				logger.error("Screenshot capture failed: " + ioException.getMessage());
 			}
 
 		} catch (Exception e) {
@@ -831,7 +851,7 @@ public class Admin_Allmodule extends Baseclass {
 		softAssert.assertAll(); // ✅ Final step to report any failures
 	}
 
-	@Test(priority = 12)
+	@Test(priority = 12, dependsOnMethods = "LoginAdminpenal")
 	public void Report_Module() throws IOException, InterruptedException {
 		SoftAssert softAssert = new SoftAssert(); // ✅ Initialize at the start
 		try {
@@ -943,6 +963,297 @@ public class Admin_Allmodule extends Baseclass {
 
 			rlp.isExportCSV();
 			logger.info("Export CSV button is displayed");
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+
+			rrp.clickCustomerVacationReports();
+			String customerVacationString = driver.getCurrentUrl();
+			logger.info("Customer Vacation page URL: " + customerVacationString);
+
+			// Create an instance of the Report_CustomerVacation_Page class
+			Report_CustomerVacation_Page rcvp = new Report_CustomerVacation_Page(driver);
+
+			String customerVacationText = rcvp.getCustomerVacationHeaderText();
+			if (customerVacationText.equals("Customer Vacation List")) {
+				logger.info("Customer Vacation page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Customer Vacation List text matched");
+			} else {
+				logger.info("Customer Vacation page sucefully open  - failed ");
+				captureScreenShot(driver, "Customer Vacation List");
+				softAssert.fail("Customer Vacation List text mismatch");
+			}
+			rcvp.clickExportAsButton();
+			logger.info("Export CSV button is displayed");
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+			rrp.clickSubscriptionReports();
+			String subscriptionString = driver.getCurrentUrl();
+			logger.info("Subscription page URL: " + subscriptionString);
+			// Create an instance of the Report_Subscription_Page class
+			Report_Subscription_Page rsp = new Report_Subscription_Page(driver);
+			String subscriptionText = rsp.getSubscriptionListHeaderText();
+			if (subscriptionText.equals("Subscription List")) {
+
+				logger.info("Subscription page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Subscription List text matched");
+			} else {
+				logger.info("Subscription page sucefully open  - failed ");
+				captureScreenShot(driver, "Subscription List");
+				softAssert.fail("Subscription List text mismatch");
+
+			}
+			rsp.clickExportAsButton();
+			logger.info("Export CSV button is displayed");
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+			rrp.clickSubscriptionEndReports();
+			String subscriptionEndString = driver.getCurrentUrl();
+			logger.info("Subscription End page URL: " + subscriptionEndString);
+			// Create an instance of the Report_SubscriptionEnd_Page class
+			Report_SubscriptionEnd_page rsep = new Report_SubscriptionEnd_page(driver);
+			String subscriptionEndText = rsep.getSubscriptionEndListHeaderText();
+			if (subscriptionEndText.equals("Subscription End List")) {
+				logger.info("Subscription End page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Subscription End List text matched");
+			} else {
+				logger.info("Subscription End page sucefully open  - failed ");
+				captureScreenShot(driver, "Subscription End List");
+				softAssert.fail("Subscription End List text mismatch");
+			}
+			rsep.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			dp.clickReports();
+			logger.info("Clicked on Reports");
+
+			rrp.isOperationalReportsVisible();
+			logger.info("Operational Reports text is displayed");
+			rrp.clickFutureOrdersReports();
+			String futureOrdersString = driver.getCurrentUrl();
+			logger.info("Future Orders page URL: " + futureOrdersString);
+			// Create an instance of the Report_FutureOrders_Page class
+			Report_FutureOrders_Page rfop = new Report_FutureOrders_Page(driver);
+			String futureOrdersText = rfop.getFutureOrdersReportHeaderText();
+			if (futureOrdersText.equals("Future Orders Report")) {
+				logger.info("Future Orders page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Future Orders List text matched");
+			} else {
+				logger.info("Future Orders page sucefully open  - failed ");
+				captureScreenShot(driver, "Future Orders List");
+				softAssert.fail("Future Orders List text mismatch");
+			}
+
+			rfop.clickExportAsButton();
+			logger.info("Export CSV button is displayed");
+			rfop.clickBackButton();
+			logger.info("Clicked on Back button");
+
+			rrp.clickPredictiveAnalysisReports();
+			String predictiveAnalysisString = driver.getCurrentUrl();
+			logger.info("Predictive Analysis page URL: " + predictiveAnalysisString);
+			// Create an instance of the Report_PredictiveAnalysis_Page class
+			Report_PredictiveAnalysis_Page rpap = new Report_PredictiveAnalysis_Page(driver);
+			String predictiveAnalysisText = rpap.getPredictiveAnalysisHeaderText();
+			if (predictiveAnalysisText.equals("Predictive Analysis")) {
+				logger.info("Predictive Analysis page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Predictive Analysis text matched");
+			} else {
+				logger.info("Predictive Analysis page sucefully open  - failed ");
+				captureScreenShot(driver, "Predictive Analysis");
+				softAssert.fail("Predictive Analysis text mismatch");
+			}
+			rpap.clickExportAsButton();
+			logger.info("Export CSV button is displayed");
+			rpap.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickReverseLogisticReports();
+			String reverseLogisticString = driver.getCurrentUrl();
+			logger.info("Reverse Logistic page URL: " + reverseLogisticString);
+			// Create an instance of the Report_ReverseLogistic_Page class
+			Report_ReverseLogistic_Page rrlp = new Report_ReverseLogistic_Page(driver);
+			String reverseLogisticText = rrlp.getReverseLogisticHeaderText();
+			if (reverseLogisticText.equals("Reverse Logistic")) {
+				logger.info("Reverse Logistic page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Reverse Logistic List text matched");
+			} else {
+				logger.info("Reverse Logistic page sucefully open  - failed ");
+				captureScreenShot(driver, "Reverse Logistic List");
+				softAssert.fail("Reverse Logistic List text mismatch");
+			}
+
+			rrlp.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickCashCollectionsReports();
+			String cashCollectionsString = driver.getCurrentUrl();
+			logger.info("Cash Collections page URL: " + cashCollectionsString);
+			// Create an instance of the Report_CashCollections_Page class
+			Report_CashCollections_Page rccp = new Report_CashCollections_Page(driver);
+			String cashCollectionsText = rccp.getCashCollectionReportHeaderText();
+			if (cashCollectionsText.equals("Cash Collection List")) {
+				logger.info("Cash Collections page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Cash Collections List text matched");
+			} else {
+				logger.info("Cash Collections page sucefully open  - failed ");
+				captureScreenShot(driver, "Cash Collections List");
+				softAssert.fail("Cash Collections List text mismatch");
+			}
+			rccp.clickExportAsButton();
+			logger.info("Export CSV button is displayed");
+			rccp.clickBackButton();
+			logger.info("Clicked on Back button");
+
+			rrp.clickOrderInformationReports();
+			String orderInformationString = driver.getCurrentUrl();
+			logger.info("Order Information page URL: " + orderInformationString);
+			// Create an instance of the Report_OrderInformation_Page class
+
+			Report_OrderInformation_Page roip = new Report_OrderInformation_Page(driver);
+			String orderInformationText = roip.getOrderInformationHeaderText();
+			if (orderInformationText.equals("Order Information")) {
+				logger.info("Order Information page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Order Information text matched");
+			} else {
+				logger.info("Order Information page sucefully open  - failed ");
+				captureScreenShot(driver, "Order Information");
+				softAssert.fail("Order Information text mismatch");
+			}
+			roip.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			roip.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickCancelledOrderReports();
+			String cancelledOrderString = driver.getCurrentUrl();
+			logger.info("Cancelled Order page URL: " + cancelledOrderString);
+			// Create an instance of the Report_CancelledOrder_Page class
+			Report_CancelledOrder_Page rcop = new Report_CancelledOrder_Page(driver);
+			String cancelledOrderText = rcop.getCancelledOrderHeaderText();
+
+			if (cancelledOrderText.equals("Cancelled Order List")) {
+				logger.info("Cancelled Order page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Cancelled Order List text matched");
+			} else {
+				logger.info("Cancelled Order page sucefully open  - failed ");
+				captureScreenShot(driver, "Cancelled Order List");
+				softAssert.fail("Cancelled Order List text mismatch");
+			}
+			rcop.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			rcop.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickDeliveriesInformationReports();
+			String deliveriesInformationString = driver.getCurrentUrl();
+			logger.info("Deliveries Information page URL: " + deliveriesInformationString);
+			// Create an instance of the Report_DeliveriesInformation_Page class
+			Report_DeliveriesInformation_Page rdip = new Report_DeliveriesInformation_Page(driver);
+			String deliveriesInformationText = rdip.getDeliveriesInformationHeaderText();
+
+			if (deliveriesInformationText.equals("Deliveries Information")) {
+				logger.info("Deliveries Information page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Deliveries Information text matched");
+			} else {
+				logger.info("Deliveries Information page sucefully open  - failed ");
+				captureScreenShot(driver, "Deliveries Information");
+				softAssert.fail("Deliveries Information text mismatch");
+
+			}
+			rdip.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			rdip.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickImageProofReports();
+			String imageProofString = driver.getCurrentUrl();
+			logger.info("Image Proof page URL: " + imageProofString);
+			// Create an instance of the Report_ImageProof_Page class
+			Report_ImageProof_Page rip = new Report_ImageProof_Page(driver);
+			String imageProofText = rip.getImageProofReportHeaderText();
+			if (imageProofText.equals("Image Proof List")) {
+				logger.info("Image Proof page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Image Proof List text matched");
+			} else {
+				logger.info("Image Proof page sucefully open  - failed ");
+				captureScreenShot(driver, "Image Proof List");
+				softAssert.fail("Image Proof List text mismatch");
+			}
+			rip.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			rip.clickBackButton();
+			logger.info("Clicked on Back button");
+
+			rrp.isSalesReportsVisible();
+
+			logger.info("Sales Reports text is displayed");
+			rrp.clickTransactionsReports();
+			String transactionsString = driver.getCurrentUrl();
+			logger.info("Transactions page URL: " + transactionsString);
+			// Create an instance of the Report_Transactions_Page class
+			Report_Transactions_Page rtp = new Report_Transactions_Page(driver);
+			String transactionsText = rtp.getTransactionsReportHeaderText();
+			if (transactionsText.equals("Transactions Report")) {
+				logger.info("Transactions page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Transactions List text matched");
+			} else {
+				logger.info("Transactions page sucefully open  - failed ");
+				captureScreenShot(driver, "Transactions List");
+				softAssert.fail("Transactions List text mismatch");
+			}
+			rtp.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			rtp.clickBackButton();
+
+			logger.info("Clicked on Back button");
+			rrp.clickCumulativeSalesReports();
+			String cumulativeSalesString = driver.getCurrentUrl();
+			logger.info("Cumulative Sales page URL: " + cumulativeSalesString);
+			// Create an instance of the Report_CumulativeSales_Page class
+			Report_CumulativeSales_Page rcsp = new Report_CumulativeSales_Page(driver);
+			String cumulativeSalesText = rcsp.getCumulativeSalesReportHeaderText();
+			if (cumulativeSalesText.equals("Cumulative Sales Report")) {
+				logger.info("Cumulative Sales page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Cumulative Sales List text matched");
+			} else {
+				logger.info("Cumulative Sales page sucefully open  - failed ");
+				captureScreenShot(driver, "Cumulative Sales List");
+				softAssert.fail("Cumulative Sales List text mismatch");
+			}
+			rcsp.clickExportAsButton();
+			logger.info("Export As button is displayed");
+			rcsp.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickOrdersSheetReports();
+			String ordersSheetString = driver.getCurrentUrl();
+
+			logger.info("Orders Sheet page URL: " + ordersSheetString);
+			// Create an instance of the Report_OrdersSheet_Page class
+			Report_OrdersSheet_Page rosp = new Report_OrdersSheet_Page(driver);
+			String ordersSheetText = rosp.getOrderSheetHeaderText();
+			if (ordersSheetText.equals("Orders Sheet")) {
+				logger.info("Orders Sheet page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Orders Sheet List text matched");
+			} else {
+				logger.info("Orders Sheet page sucefully open  - failed ");
+				captureScreenShot(driver, "Orders Sheet List");
+				softAssert.fail("Orders Sheet List text mismatch");
+			}
+			rosp.isDownloadDeliveryButtonDisplayed();
+			logger.info("Download Delivery button is displayed");
+			rosp.clickBackButton();
+			logger.info("Clicked on Back button");
+			rrp.clickWalletPaymentReports();
+			String walletPaymentString = driver.getCurrentUrl();
+			logger.info("Wallet Payment page URL: " + walletPaymentString);
+			// Create an instance of the Report_WalletPayment_Page class
+			Report_WalletPayment_Page rwpp = new Report_WalletPayment_Page(driver);
+			String walletPaymentText = rwpp.getPaymentGatewayUsageReportHeaderText();
+			if (walletPaymentText.equals("Payment Gateway Usage")) {
+				logger.info("Wallet Payment page sucefully open - Passed ");
+				softAssert.assertTrue(true, "Wallet Payment List text matched");
+			} else {
+				logger.info("Wallet Payment page sucefully open  - failed ");
+				captureScreenShot(driver, "Wallet Payment List");
+				softAssert.fail("Wallet Payment List text mismatch");
+			}
+
+			rwpp.clickBackButton();
+			logger.info("Clicked on Back button");
 
 			dp.clickdashbord();
 			logger.info("Report_Module Module Finish...click on dashborad");
