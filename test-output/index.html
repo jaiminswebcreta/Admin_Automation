@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">18 methods,   18 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Admin_MilkRide.Module.Admin_Allmodule" class="method navigator-link" hash-for-method="Hubmanager">Hubmanager</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -139,11 +153,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.Admin_MilkRide.Module.Admin_Allmodule" class="method navigator-link" hash-for-method="HubInfo">HubInfo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Admin_MilkRide.Module.Admin_Allmodule" class="method navigator-link" hash-for-method="Hubmanager">Hubmanager</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -203,6 +212,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Admin_MilkRide.Module.Admin_Allmodule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Hubmanager">
+                  </a> <!-- Hubmanager -->
+                  <span class="method-name">Hubmanager</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Hub list text mismatch
+	at com.Admin_MilkRide.Module.Admin_Allmodule.Hubmanager(Admin_Allmodule.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -263,13 +293,6 @@
                   <a name="HubInfo">
                   </a> <!-- HubInfo -->
                   <span class="method-name">HubInfo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Hubmanager">
-                  </a> <!-- Hubmanager -->
-                  <span class="method-name">Hubmanager</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -396,75 +419,75 @@ data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Report_Module')
 data.setCell(0, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(0, 3, 37738);
+data.setCell(0, 3, 34375);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'HubInfo')
+data.setCell(1, 1, 'Product_Catalogs')
 data.setCell(1, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(1, 3, 12806);
+data.setCell(1, 3, 20317);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Product_Catalogs')
+data.setCell(2, 1, 'HubInfo')
 data.setCell(2, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(2, 3, 9945);
+data.setCell(2, 3, 14264);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Delivery_Management')
 data.setCell(3, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(3, 3, 9372);
+data.setCell(3, 3, 8945);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Customer_Managemnt')
 data.setCell(4, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(4, 3, 8680);
+data.setCell(4, 3, 7799);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Locations_Manager')
+data.setCell(5, 1, 'Role_Module')
 data.setCell(5, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(5, 3, 7801);
+data.setCell(5, 3, 7254);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'FlexProduct_Plan')
+data.setCell(6, 1, 'Locations_Manager')
 data.setCell(6, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(6, 3, 6657);
+data.setCell(6, 3, 7194);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Hubmanager')
+data.setCell(7, 1, 'FlexProduct_Plan')
 data.setCell(7, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(7, 3, 6619);
+data.setCell(7, 3, 7054);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Role_Module')
+data.setCell(8, 1, 'Hubmanager')
 data.setCell(8, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(8, 3, 5780);
+data.setCell(8, 3, 6633);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Banner')
+data.setCell(9, 1, 'Support_Management')
 data.setCell(9, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(9, 3, 4840);
+data.setCell(9, 3, 5697);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Inventory_Managment')
+data.setCell(10, 1, 'Banner')
 data.setCell(10, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(10, 3, 4421);
+data.setCell(10, 3, 5521);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Manage_CMS_Pages')
+data.setCell(11, 1, 'Inventory_Managment')
 data.setCell(11, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(11, 3, 3652);
+data.setCell(11, 3, 5513);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Support_Management')
+data.setCell(12, 1, 'Site_Management')
 data.setCell(12, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(12, 3, 3515);
+data.setCell(12, 3, 4120);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'Features')
+data.setCell(13, 1, 'Manage_CMS_Pages')
 data.setCell(13, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(13, 3, 3447);
+data.setCell(13, 3, 3822);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'Site_Management')
+data.setCell(14, 1, 'Features')
 data.setCell(14, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(14, 3, 3303);
+data.setCell(14, 3, 3316);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'Billing_History')
 data.setCell(15, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(15, 3, 3149);
+data.setCell(15, 3, 3032);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'General_Setting')
 data.setCell(16, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(16, 3, 2896);
+data.setCell(16, 3, 2786);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'LoginAdminpenal')
 data.setCell(17, 2, 'com.Admin_MilkRide.Module.Admin_Allmodule')
-data.setCell(17, 3, 2891);
+data.setCell(17, 3, 2540);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -502,79 +525,81 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LoginAdminpenal</span>
-                <span class="method-start">3622 ms</span>
+                <span class="method-start">4490 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Hubmanager</span>
-                <span class="method-start">6533 ms</span>
+                <span class="method-start">7041 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">HubInfo</span>
-                <span class="method-start">13157 ms</span>
+                <span class="method-start">13886 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Delivery_Management</span>
-                <span class="method-start">25971 ms</span>
+                <span class="method-start">28152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Billing_History</span>
-                <span class="method-start">35346 ms</span>
+                <span class="method-start">37103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Customer_Managemnt</span>
-                <span class="method-start">38499 ms</span>
+                <span class="method-start">40138 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Product_Catalogs</span>
-                <span class="method-start">47185 ms</span>
+                <span class="method-start">47939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Inventory_Managment</span>
-                <span class="method-start">57135 ms</span>
+                <span class="method-start">68259 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FlexProduct_Plan</span>
-                <span class="method-start">61565 ms</span>
+                <span class="method-start">73775 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Banner</span>
-                <span class="method-start">68231 ms</span>
+                <span class="method-start">80831 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Locations_Manager</span>
-                <span class="method-start">73078 ms</span>
+                <span class="method-start">86354 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Report_Module</span>
-                <span class="method-start">80884 ms</span>
+                <span class="method-start">93551 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Role_Module</span>
-                <span class="method-start">118631 ms</span>
+                <span class="method-start">127928 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Support_Management</span>
-                <span class="method-start">124420 ms</span>
+                <span class="method-start">135185 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Features</span>
-                <span class="method-start">127939 ms</span>
+                <span class="method-start">140887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">General_Setting</span>
-                <span class="method-start">131392 ms</span>
+                <span class="method-start">144206 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Manage_CMS_Pages</span>
-                <span class="method-start">134290 ms</span>
+                <span class="method-start">146997 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Site_Management</span>
-                <span class="method-start">137945 ms</span>
+                <span class="method-start">150822 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">141262 ms</span>
+                <span class="method-start">154947 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -64,8 +64,7 @@ public class Baseclass {
 
 		//for logging
 		
-		logger = LogManager.getLogger("AdminMilkRidev3");
-		
+		logger = LogManager.getLogger(Baseclass.class);	
 		//open url
 		
 				driver.get(url);
@@ -83,19 +82,14 @@ public class Baseclass {
 		
 	}
 	//user method to capture screen shot
-		public static void captureScreenShot(WebDriver driver,String testName) throws IOException
-		{
-			//step1: convert webdriver object to TakesScreenshot interface
-			TakesScreenshot screenshot = ((TakesScreenshot)driver);
-			
-			//step2: call getScreenshotAs method to create image file
-			
-			File src = screenshot.getScreenshotAs(OutputType.FILE);
-			
-			File dest = new File(System.getProperty("user.dir") + "//screenshots//" + testName + ".png");
-		
-			//step3: copy image file to destination
-			FileUtils.copyFile(src, dest);
-		}
+	// In Baseclass.java
+	public static String captureScreenShot(WebDriver driver, String testName) throws IOException {
+	    TakesScreenshot screenshot = ((TakesScreenshot)driver);
+	    File src = screenshot.getScreenshotAs(OutputType.FILE);
+	    String destPath = System.getProperty("user.dir") + "//screenshots//" + testName + ".png";
+	    File dest = new File(destPath);
+	    FileUtils.copyFile(src, dest);
+	    return destPath; // Return the path for the listener
+	}
 
 }

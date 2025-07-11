@@ -6,9 +6,9 @@
       <class name="com.Admin_MilkRide.Module.Admin_Allmodule">
         <methods>
           <include name="tearDown"/>
+          <include name="Hubmanager"/>
           <include name="setup"/>
           <include name="LoginAdminpenal"/>
-          <include name="Role_Module"/>
         </methods>
       </class> <!-- com.Admin_MilkRide.Module.Admin_Allmodule -->
     </classes>

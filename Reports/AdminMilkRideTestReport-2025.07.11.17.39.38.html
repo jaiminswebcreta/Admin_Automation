@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>MilkRide Admin Automation Report</title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 11, 2025 12:10:35 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 11, 2025 05:39:38 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -81,7 +87,7 @@
           <div class="test-detail">
             <p class="name">LoginAdminpenal</p>
             <p class="text-sm">
-              <span>12:10:42 PM</span> / <span>00:00:00:008</span>
+              <span>5:39:42 PM</span> / <span>00:00:02:334</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,24 +96,60 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">LoginAdminpenal</h5>
-<span class='badge badge-success'>07.11.2025 12:10:42 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:10:42 PM</span>
-<span class='badge badge-default'>00:00:00:008</span>
+<span class='badge badge-success'>07.11.2025 5:39:42 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:39:44 PM</span>
+<span class='badge badge-default'>00:00:02:334</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:10:42 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:42 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: LoginAdminpenal</span>
+          Entered email address: ruralbloomroots@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:42 PM</td>
+        <td>
+          Entered password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:44 PM</td>
+        <td>
+          Clicked on Login button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:44 PM</td>
+        <td>
+          Navigated to Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:39:44 PM</td>
+        <td>
+          Login successful: Dashboard text is visible.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:39:44 PM</td>
+        <td>
+          <span class='badge white-text green'>Test Case Passed: LoginAdminpenal</span>
         </td>
       </tr>
   </tbody>
@@ -115,40 +157,116 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Hubmanager</p>
             <p class="text-sm">
-              <span>12:10:48 PM</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:39:44 PM</span> / <span>00:00:06:893</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Hubmanager</h5>
-<span class='badge badge-success'>07.11.2025 12:10:48 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:10:48 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-fail">Hubmanager</h5>
+<span class='badge badge-success'>07.11.2025 5:39:44 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:39:51 PM</span>
+<span class='badge badge-default'>00:00:06:893</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:10:48 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:47 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Hubmanager</span>
+          Navigated to Hubs URL: https://app.milkride.com/admin/hubs
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:39:47 PM</td>
+        <td>
+          Hub list page failed to open: Hubs List text was not found. Found: Hubs List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:51 PM</td>
+        <td>
+          Navigated to HubInfo URL: https://app.milkride.com/admin/hubs/show/20/info
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:39:51 PM</td>
+        <td>
+          <span class='badge white-text red'>Test Case Failed: Hubmanager</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:39:51 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Hub list text mismatch
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.Admin_MilkRide.Module.Admin_Allmodule.Hubmanager(Admin_Allmodule.java:180)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:39:51 PM</td>
+        <td>
+          Screenshot:
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\manal\eclipse-workspace\Admin_MilkRide//screenshots//Hubmanager.png' src="C:\Users\manal\eclipse-workspace\Admin_MilkRide//screenshots//Hubmanager.png">
+  
+    
+
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -163,7 +281,7 @@
           <div class="test-detail">
             <p class="name">HubInfo</p>
             <p class="text-sm">
-              <span>12:11:01 PM</span> / <span>00:00:00:000</span>
+              <span>5:39:51 PM</span> / <span>00:00:14:527</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -172,14 +290,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">HubInfo</h5>
-<span class='badge badge-success'>07.11.2025 12:11:01 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:01 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:39:51 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:06 PM</span>
+<span class='badge badge-default'>00:00:14:527</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -187,9 +306,142 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:01 PM</td>
+        <td>5:39:51 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: HubInfo</span>
+          Hub info page opened successfully: Hub name text is visible.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:53 PM</td>
+        <td>
+          Navigated to Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:53 PM</td>
+        <td>
+          Add User button is visible on Hubs Account page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:55 PM</td>
+        <td>
+          Clicked on Location option in Hubs Account page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:55 PM</td>
+        <td>
+          Navigated to Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:55 PM</td>
+        <td>
+          Add Location button is visible on Hubs Location page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:55 PM</td>
+        <td>
+          Location transfer button is visible on Hubs Location page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:57 PM</td>
+        <td>
+          Clicked on Product option in Hubs Location page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:57 PM</td>
+        <td>
+          Navigated to Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:57 PM</td>
+        <td>
+          Add Product button is visible on Hubs Product page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:39:59 PM</td>
+        <td>
+          Add Contact button is visible on Hubs Contact page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:01 PM</td>
+        <td>
+          Clicked on Document option in Hubs Contact page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:01 PM</td>
+        <td>
+          Navigated to Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:01 PM</td>
+        <td>
+          Add Document button is visible on Hubs Document page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 PM</td>
+        <td>
+          Clicked on Disable area option in Hubs Document page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 PM</td>
+        <td>
+          Navigated to Hubs Disable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 PM</td>
+        <td>
+          Add Disable area button is visible on Hubs Disable area page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 PM</td>
+        <td>
+          Clicked on Hub Manager option in Hubs Disable area page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:06 PM</td>
+        <td>
+          Clicked on Dashboard to finish Hub module
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:06 PM</td>
+        <td>
+          <span class='badge white-text green'>Test Case Passed: HubInfo</span>
         </td>
       </tr>
   </tbody>
@@ -204,7 +456,7 @@
           <div class="test-detail">
             <p class="name">Delivery_Management</p>
             <p class="text-sm">
-              <span>12:11:10 PM</span> / <span>00:00:00:000</span>
+              <span>5:40:06 PM</span> / <span>00:00:08:383</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -213,24 +465,102 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Delivery_Management</h5>
-<span class='badge badge-success'>07.11.2025 12:11:10 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:10 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:40:06 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:14 PM</span>
+<span class='badge badge-default'>00:00:08:383</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:10 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:08 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Delivery_Management</span>
+          Navigated to Delivery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:08 PM</td>
+        <td>
+          Delivery Dashboard page opened successfully: Delivery Dashboard text is visible.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:08 PM</td>
+        <td>
+          Navigated to Delivery Transfer URL: https://app.milkride.com/admin/delivery-transfer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:08 PM</td>
+        <td>
+          Delivery Transfer page opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:11 PM</td>
+        <td>
+          Navigated to Manual Route URL: https://app.milkride.com/admin/delivery/manual-route
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:11 PM</td>
+        <td>
+          Manual Route page opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:11 PM</td>
+        <td>
+          Navigated to Route Assistance URL: https://app.milkride.com/admin/delivery/route-assignment
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:11 PM</td>
+        <td>
+          Route Assistance page opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:13 PM</td>
+        <td>
+          Navigated to Master Route URL: https://app.milkride.com/admin/master-delivery/master-route
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:13 PM</td>
+        <td>
+          Master Route page opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:14 PM</td>
+        <td>
+          Clicked on Dashboard to finish Delivery Management module
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:14 PM</td>
+        <td>
+          <span class='badge white-text green'>Test Case Passed: Delivery_Management</span>
         </td>
       </tr>
   </tbody>
@@ -245,7 +575,7 @@
           <div class="test-detail">
             <p class="name">Billing_History</p>
             <p class="text-sm">
-              <span>12:11:14 PM</span> / <span>00:00:00:000</span>
+              <span>5:40:14 PM</span> / <span>00:00:02:689</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -254,24 +584,53 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Billing_History</h5>
-<span class='badge badge-success'>07.11.2025 12:11:14 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:14 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:40:14 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:17 PM</span>
+<span class='badge badge-default'>00:00:02:689</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:14 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:14 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Billing_History</span>
+          Clicked on Billing History module
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:16 PM</td>
+        <td>
+          Navigated to Invoice URL: https://app.milkride.com/admin/merchants/invoices
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:16 PM</td>
+        <td>
+          Invoice List page opened successfully: Invoice List text is visible.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:17 PM</td>
+        <td>
+          Clicked on Dashboard to finish Billing History module
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:17 PM</td>
+        <td>
+          <span class='badge white-text green'>Test Case Passed: Billing_History</span>
         </td>
       </tr>
   </tbody>
@@ -286,7 +645,7 @@
           <div class="test-detail">
             <p class="name">Customer_Managemnt</p>
             <p class="text-sm">
-              <span>12:11:22 PM</span> / <span>00:00:00:000</span>
+              <span>5:40:17 PM</span> / <span>00:00:07:947</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -295,24 +654,39 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Customer_Managemnt</h5>
-<span class='badge badge-success'>07.11.2025 12:11:22 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:22 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:40:17 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:25 PM</span>
+<span class='badge badge-default'>00:00:07:947</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:22 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:19 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Customer_Managemnt</span>
+          Navigated to Customer Management URL: https://app.milkride.com/admin/customers
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:19 PM</td>
+        <td>
+          Customers List page opened successfully: Customers List text is visible.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:25 PM</td>
+        <td>
+          <span class='badge white-text green'>Test Case Passed: Customer_Managemnt</span>
         </td>
       </tr>
   </tbody>
@@ -327,7 +701,7 @@
           <div class="test-detail">
             <p class="name">Product_Catalogs</p>
             <p class="text-sm">
-              <span>12:11:32 PM</span> / <span>00:00:00:000</span>
+              <span>5:40:25 PM</span> / <span>00:00:13:524</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -336,14 +710,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Product_Catalogs</h5>
-<span class='badge badge-success'>07.11.2025 12:11:32 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:32 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:40:25 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:38 PM</span>
+<span class='badge badge-default'>00:00:13:524</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -351,9 +726,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:32 PM</td>
+        <td>5:40:38 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Product_Catalogs</span>
+          <span class='badge white-text green'>Test Case Passed: Product_Catalogs</span>
         </td>
       </tr>
   </tbody>
@@ -368,7 +743,7 @@
           <div class="test-detail">
             <p class="name">Inventory_Managment</p>
             <p class="text-sm">
-              <span>12:11:37 PM</span> / <span>00:00:00:001</span>
+              <span>5:40:38 PM</span> / <span>00:00:06:533</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -377,14 +752,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Inventory_Managment</h5>
-<span class='badge badge-success'>07.11.2025 12:11:37 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:37 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<span class='badge badge-success'>07.11.2025 5:40:38 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:45 PM</span>
+<span class='badge badge-default'>00:00:06:533</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -392,9 +768,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:37 PM</td>
+        <td>5:40:45 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Inventory_Managment</span>
+          <span class='badge white-text green'>Test Case Passed: Inventory_Managment</span>
         </td>
       </tr>
   </tbody>
@@ -409,7 +785,7 @@
           <div class="test-detail">
             <p class="name">FlexProduct_Plan</p>
             <p class="text-sm">
-              <span>12:11:43 PM</span> / <span>00:00:00:000</span>
+              <span>5:40:45 PM</span> / <span>00:00:07:052</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -418,14 +794,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">FlexProduct_Plan</h5>
-<span class='badge badge-success'>07.11.2025 12:11:43 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:43 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:40:45 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:40:52 PM</span>
+<span class='badge badge-default'>00:00:07:052</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -433,9 +810,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:43 PM</td>
+        <td>5:40:52 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: FlexProduct_Plan</span>
+          <span class='badge white-text green'>Test Case Passed: FlexProduct_Plan</span>
         </td>
       </tr>
   </tbody>
@@ -450,7 +827,7 @@
           <div class="test-detail">
             <p class="name">Banner</p>
             <p class="text-sm">
-              <span>12:11:48 PM</span> / <span>00:00:00:004</span>
+              <span>5:40:52 PM</span> / <span>00:00:08:582</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -459,14 +836,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Banner</h5>
-<span class='badge badge-success'>07.11.2025 12:11:48 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:48 PM</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<span class='badge badge-success'>07.11.2025 5:40:52 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:41:00 PM</span>
+<span class='badge badge-default'>00:00:08:582</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -474,9 +852,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:48 PM</td>
+        <td>5:41:00 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Banner</span>
+          <span class='badge white-text green'>Test Case Passed: Banner</span>
         </td>
       </tr>
   </tbody>
@@ -491,7 +869,7 @@
           <div class="test-detail">
             <p class="name">Locations_Manager</p>
             <p class="text-sm">
-              <span>12:11:56 PM</span> / <span>00:00:00:000</span>
+              <span>5:41:00 PM</span> / <span>00:00:09:483</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -500,14 +878,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Locations_Manager</h5>
-<span class='badge badge-success'>07.11.2025 12:11:56 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:11:56 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:41:00 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:41:10 PM</span>
+<span class='badge badge-default'>00:00:09:483</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -515,9 +894,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:11:56 PM</td>
+        <td>5:41:10 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Locations_Manager</span>
+          <span class='badge white-text green'>Test Case Passed: Locations_Manager</span>
         </td>
       </tr>
   </tbody>
@@ -532,7 +911,7 @@
           <div class="test-detail">
             <p class="name">Report_Module</p>
             <p class="text-sm">
-              <span>12:12:34 PM</span> / <span>00:00:00:000</span>
+              <span>5:41:10 PM</span> / <span>00:00:35:358</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -541,14 +920,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Report_Module</h5>
-<span class='badge badge-success'>07.11.2025 12:12:34 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:34 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:41:10 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:41:45 PM</span>
+<span class='badge badge-default'>00:00:35:358</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -556,9 +936,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:34 PM</td>
+        <td>5:41:45 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Report_Module</span>
+          <span class='badge white-text green'>Test Case Passed: Report_Module</span>
         </td>
       </tr>
   </tbody>
@@ -573,7 +953,7 @@
           <div class="test-detail">
             <p class="name">Role_Module</p>
             <p class="text-sm">
-              <span>12:12:39 PM</span> / <span>00:00:00:000</span>
+              <span>5:41:45 PM</span> / <span>00:00:04:822</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -582,14 +962,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Role_Module</h5>
-<span class='badge badge-success'>07.11.2025 12:12:39 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:39 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:41:45 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:41:50 PM</span>
+<span class='badge badge-default'>00:00:04:822</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -597,9 +978,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:39 PM</td>
+        <td>5:41:50 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Role_Module</span>
+          <span class='badge white-text green'>Test Case Passed: Role_Module</span>
         </td>
       </tr>
   </tbody>
@@ -614,7 +995,7 @@
           <div class="test-detail">
             <p class="name">Support_Management</p>
             <p class="text-sm">
-              <span>12:12:43 PM</span> / <span>00:00:00:000</span>
+              <span>5:41:50 PM</span> / <span>00:00:03:482</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -623,14 +1004,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Support_Management</h5>
-<span class='badge badge-success'>07.11.2025 12:12:43 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:43 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:41:50 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:41:54 PM</span>
+<span class='badge badge-default'>00:00:03:482</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -638,9 +1020,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:43 PM</td>
+        <td>5:41:54 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Support_Management</span>
+          <span class='badge white-text green'>Test Case Passed: Support_Management</span>
         </td>
       </tr>
   </tbody>
@@ -655,7 +1037,7 @@
           <div class="test-detail">
             <p class="name">Features</p>
             <p class="text-sm">
-              <span>12:12:46 PM</span> / <span>00:00:00:001</span>
+              <span>5:41:54 PM</span> / <span>00:00:03:934</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -664,14 +1046,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Features</h5>
-<span class='badge badge-success'>07.11.2025 12:12:46 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:46 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<span class='badge badge-success'>07.11.2025 5:41:54 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:41:58 PM</span>
+<span class='badge badge-default'>00:00:03:934</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -679,9 +1062,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:46 PM</td>
+        <td>5:41:58 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Features</span>
+          <span class='badge white-text green'>Test Case Passed: Features</span>
         </td>
       </tr>
   </tbody>
@@ -696,7 +1079,7 @@
           <div class="test-detail">
             <p class="name">General_Setting</p>
             <p class="text-sm">
-              <span>12:12:49 PM</span> / <span>00:00:00:000</span>
+              <span>5:41:58 PM</span> / <span>00:00:02:868</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -705,14 +1088,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">General_Setting</h5>
-<span class='badge badge-success'>07.11.2025 12:12:49 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:49 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:41:58 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:42:00 PM</span>
+<span class='badge badge-default'>00:00:02:868</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -720,9 +1104,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:49 PM</td>
+        <td>5:42:00 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: General_Setting</span>
+          <span class='badge white-text green'>Test Case Passed: General_Setting</span>
         </td>
       </tr>
   </tbody>
@@ -737,7 +1121,7 @@
           <div class="test-detail">
             <p class="name">Manage_CMS_Pages</p>
             <p class="text-sm">
-              <span>12:12:53 PM</span> / <span>00:00:00:000</span>
+              <span>5:42:00 PM</span> / <span>00:00:03:665</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -746,14 +1130,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Manage_CMS_Pages</h5>
-<span class='badge badge-success'>07.11.2025 12:12:53 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:53 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:42:00 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:42:04 PM</span>
+<span class='badge badge-default'>00:00:03:665</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -761,9 +1146,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:53 PM</td>
+        <td>5:42:04 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Manage_CMS_Pages</span>
+          <span class='badge white-text green'>Test Case Passed: Manage_CMS_Pages</span>
         </td>
       </tr>
   </tbody>
@@ -778,7 +1163,7 @@
           <div class="test-detail">
             <p class="name">Site_Management</p>
             <p class="text-sm">
-              <span>12:12:56 PM</span> / <span>00:00:00:000</span>
+              <span>5:42:04 PM</span> / <span>00:00:03:232</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -787,14 +1172,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Site_Management</h5>
-<span class='badge badge-success'>07.11.2025 12:12:56 PM</span>
-<span class='badge badge-danger'>07.11.2025 12:12:56 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>07.11.2025 5:42:04 PM</span>
+<span class='badge badge-danger'>07.11.2025 5:42:07 PM</span>
+<span class='badge badge-default'>00:00:03:232</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -802,9 +1188,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:12:56 PM</td>
+        <td>5:42:07 PM</td>
         <td>
-          <span class='badge white-text green'>Test Passed: Site_Management</span>
+          <span class='badge white-text green'>Test Case Passed: Site_Management</span>
         </td>
       </tr>
   </tbody>
@@ -821,30 +1207,79 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:39:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Hubmanager</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 11, 2025 12:10:35 PM</h3>
+<h3>Jul 11, 2025 05:39:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 11, 2025 12:12:57 PM</h3>
+<h3>Jul 11, 2025 05:42:08 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>18</h3>
+<h3>17</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -860,12 +1295,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>18</b> tests passed
+<div><small data-tooltip='94%'>
+<b>17</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='5%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -883,10 +1318,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>18</b> events passed</small></div>
+<div><small data-tooltip='34%'><b>22</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='6%'><b>4</b> events failed,
+<b data-tooltip='%'>38</b> others
 </small>
 </div>
 </div>
@@ -902,7 +1337,7 @@
 </div></div>
 <script>
 var timeline = {
-"LoginAdminpenal":0.008,"Hubmanager":0.001,"HubInfo":0,"Delivery_Management":0,"Billing_History":0,"Customer_Managemnt":0,"Product_Catalogs":0,"Inventory_Managment":0.001,"FlexProduct_Plan":0,"Banner":0.004,"Locations_Manager":0,"Report_Module":0,"Role_Module":0,"Support_Management":0,"Features":0.001,"General_Setting":0,"Manage_CMS_Pages":0,"Site_Management":0
+"LoginAdminpenal":2.334,"Hubmanager":6.893,"HubInfo":14.527,"Delivery_Management":8.383,"Billing_History":2.689,"Customer_Managemnt":7.947,"Product_Catalogs":13.524,"Inventory_Managment":6.533,"FlexProduct_Plan":7.052,"Banner":8.582,"Locations_Manager":9.483,"Report_Module":35.358,"Role_Module":4.822,"Support_Management":3.482,"Features":3.934,"General_Setting":2.868,"Manage_CMS_Pages":3.665,"Site_Management":3.232
 };
 </script>
 <div class="row">
@@ -937,8 +1372,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 18,
-failParent: 0,
+passParent: 17,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -954,11 +1389,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 18,
-failEvents: 0,
+passEvents: 22,
+failEvents: 4,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 38
 };
 </script>        </div>
       </div>
