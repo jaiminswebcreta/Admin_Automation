@@ -73,8 +73,23 @@ public class dashbordpage {
 
 	@FindBy(xpath = "(//span[normalize-space()='Region'])[1]")
 	WebElement regionElement;
-	
-	
+
+	@FindBy(xpath = "(//span[contains(text(),'Users & Roles')])[1]")
+	WebElement usersAndRolesElement;
+
+	@FindBy(xpath = "(//span[normalize-space()='User'])[1]")
+	WebElement userElement;
+
+	// Action Performed
+	public void clickUser() {
+		userElement.click();
+	}
+
+	public void clickUsersAndRoles() {
+		usersAndRolesElement.click();
+	}
+
+	// Action Performed
 
 	public void clickRegion() {
 		regionElement.click();
@@ -163,14 +178,59 @@ public class dashbordpage {
 		bannerElement.click();
 
 	}
-	
+
 	// Add to dashbordpage.java
 
-@FindBy(xpath = "(//span[normalize-space()='Reports'])[1]")
-WebElement reportsElement;
+	@FindBy(xpath = "(//span[normalize-space()='Reports'])[1]")
+	WebElement reportsElement;
 
-public void clickReports() {
-    reportsElement.click();
-}
+	public void clickReports() {
+		reportsElement.click();
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Support Management')])[1]")	
+	WebElement supportManagementElement;
+	public void clickSupportManagement() {
+		supportManagementElement.click();
+	}
+	
+	@FindBy(xpath = "(//span[normalize-space()='Tickets'])[1]")
+	WebElement ticketsElement;
+	public void clickTickets() {
+			ticketsElement.click();
+			
+	}
+	
+	
+	
+		@FindBy(xpath = "(//span[@class='menu-title'][normalize-space()='Features'])[1]")
+		WebElement featuresElement;
+		public void clickFeatures() {
+				featuresElement.click();
+					
+		}
+		@FindBy(xpath = "(//span[normalize-space()='Addon Features'])[1]")
+		WebElement addonFeaturesElement;
+		public void clickAddonFeatures() {
+			addonFeaturesElement.click();
+		}
+		
+		@FindBy(xpath = "(//span[normalize-space()='General Setting'])[1]")
+		WebElement generalSettingElement;
+		public void clickGeneralSetting() {
+			generalSettingElement.click();
+		}
+		@FindBy(xpath = "(//span[normalize-space()='Manage CMS Pages'])[1]")
+		WebElement manageCMSElement;
+		public void clickManageCMS() {
+			manageCMSElement.click();
+		}
+		@FindBy(xpath = "(//span[normalize-space()='Site Management'])[1]")	
+		WebElement siteManagementElement;
+		public void clickSiteManagement() {
+			siteManagementElement.click();
+		}
+		
+			
 
 }

@@ -3637,3 +3637,311 @@ Session ID: d74e7cfd38f717f2cb0d4da93b912990
 [INFO ] 2025-07-10 13:29:20.362 [main] AdminMilkRidev3 - Fill passwoed
 [INFO ] 2025-07-10 13:29:22.520 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
 [INFO ] 2025-07-10 13:29:22.559 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 11:05:19.448 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 11:05:19.795 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 11:05:19.868 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 11:05:22.060 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 11:05:22.107 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 11:05:24.878 [main] AdminMilkRidev3 - User page URL: https://app.milkride.com/admin/users
+[ERROR] 2025-07-11 11:05:34.990 [main] AdminMilkRidev3 - Exception occurred in Role_Module: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[normalize-space()='Users'])[1]"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9667e0924e175605ca0efa9553c22191, findElement {value=(//span[normalize-space()='Users'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58608}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58608/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9667e0924e175605ca0efa9553c22191
+[INFO ] 2025-07-11 11:08:38.406 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 11:08:38.764 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 11:08:38.833 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 11:08:40.863 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 11:08:40.904 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 11:08:43.463 [main] AdminMilkRidev3 - User page URL: https://app.milkride.com/admin/users
+[ERROR] 2025-07-11 11:08:53.593 [main] AdminMilkRidev3 - Exception occurred in Role_Module: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[normalize-space()='Users'])[1]"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c90ec1dcbb292e5330ba89a5bcbd595, findElement {using=xpath, value=(//span[normalize-space()='Users'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58735/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c90ec1dcbb292e5330ba89a5bcbd595
+[INFO ] 2025-07-11 11:09:52.547 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 11:09:52.869 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 11:09:52.942 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 11:09:54.925 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 11:09:54.972 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 11:09:57.113 [main] AdminMilkRidev3 - User page URL: https://app.milkride.com/admin/users
+[INFO ] 2025-07-11 11:09:57.146 [main] AdminMilkRidev3 - User page sucefully open - Passed 
+[INFO ] 2025-07-11 11:09:57.182 [main] AdminMilkRidev3 - Add User button is displayed
+[ERROR] 2025-07-11 11:10:07.247 [main] AdminMilkRidev3 - Exception occurred in Role_Module: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[normalize-space()='Add Agent'])[1]"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8303900c396fda63d9478ef7e4602ad, findElement {using=xpath, value=(//a[normalize-space()='Add Agent'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\manal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58802/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8303900c396fda63d9478ef7e4602ad
+[INFO ] 2025-07-11 11:12:05.146 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 11:12:05.461 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 11:12:05.527 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 11:12:07.606 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 11:12:07.651 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 11:12:09.878 [main] AdminMilkRidev3 - User page URL: https://app.milkride.com/admin/users
+[INFO ] 2025-07-11 11:12:09.903 [main] AdminMilkRidev3 - User page sucefully open - Passed 
+[INFO ] 2025-07-11 11:12:09.936 [main] AdminMilkRidev3 - Add User button is displayed
+[INFO ] 2025-07-11 11:12:10.619 [main] AdminMilkRidev3 - Add Agent page URL: https://app.milkride.com/admin/agents
+[INFO ] 2025-07-11 11:12:10.652 [main] AdminMilkRidev3 - Add Agent page sucefully open - Passed 
+[INFO ] 2025-07-11 11:12:10.675 [main] AdminMilkRidev3 - Add Agent button is displayed
+[INFO ] 2025-07-11 11:12:11.348 [main] AdminMilkRidev3 - Role page URL: https://app.milkride.com/admin/roles
+[INFO ] 2025-07-11 11:12:11.380 [main] AdminMilkRidev3 - Role page sucefully open - Passed 
+[INFO ] 2025-07-11 11:12:11.404 [main] AdminMilkRidev3 - Add Role button is displayed
+[INFO ] 2025-07-11 11:12:12.239 [main] AdminMilkRidev3 - Role_Module Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:08:56.958 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 12:08:57.296 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 12:08:57.367 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 12:08:59.488 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 12:08:59.536 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 12:09:01.640 [main] AdminMilkRidev3 - Tickets page URL: https://app.milkride.com/admin/tickets
+[INFO ] 2025-07-11 12:09:01.673 [main] AdminMilkRidev3 - Tickets page sucefully open - Passed 
+[INFO ] 2025-07-11 12:09:01.708 [main] AdminMilkRidev3 - Add New Ticket button is displayed
+[INFO ] 2025-07-11 12:09:02.730 [main] AdminMilkRidev3 - Support Management Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:09:15.563 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 12:09:15.873 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 12:09:15.938 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 12:09:18.844 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/login
+[INFO ] 2025-07-11 12:09:18.892 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 12:09:21.847 [main] AdminMilkRidev3 - Features page URL: https://app.milkride.com/admin/features/list
+[INFO ] 2025-07-11 12:09:21.888 [main] AdminMilkRidev3 - Features page sucefully open - Passed 
+[INFO ] 2025-07-11 12:09:23.246 [main] AdminMilkRidev3 - Features Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:09:35.023 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 12:09:35.354 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 12:09:35.426 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 12:09:37.517 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/login
+[INFO ] 2025-07-11 12:09:37.564 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 12:09:39.525 [main] AdminMilkRidev3 - General Setting page URL: https://app.milkride.com/admin/setting/12/general_settings
+[INFO ] 2025-07-11 12:09:39.555 [main] AdminMilkRidev3 - General Setting page sucefully open - Passed 
+[INFO ] 2025-07-11 12:09:40.479 [main] AdminMilkRidev3 - General_Setting Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:09:51.176 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 12:09:52.105 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 12:09:52.174 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 12:09:54.198 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 12:09:54.236 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 12:09:56.733 [main] AdminMilkRidev3 - Manage CMS page URL: https://app.milkride.com/admin/setting/12/cms_pages
+[INFO ] 2025-07-11 12:09:56.766 [main] AdminMilkRidev3 - Manage CMS page sucefully open - Passed 
+[INFO ] 2025-07-11 12:09:57.666 [main] AdminMilkRidev3 - Manage_CMS_Pages Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:10:10.063 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 12:10:10.405 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 12:10:10.476 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 12:10:12.527 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 12:10:12.569 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 12:10:16.046 [main] AdminMilkRidev3 - Site Management page URL: https://app.milkride.com/admin/config/11/edit
+[INFO ] 2025-07-11 12:10:16.098 [main] AdminMilkRidev3 - Site Management page sucefully open - Passed 
+[INFO ] 2025-07-11 12:10:17.004 [main] AdminMilkRidev3 - Site_Management Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:10:39.155 [main] AdminMilkRidev3 - Url Open
+[INFO ] 2025-07-11 12:10:39.470 [main] AdminMilkRidev3 - Fill Email
+[INFO ] 2025-07-11 12:10:39.538 [main] AdminMilkRidev3 - Fill passwoed
+[INFO ] 2025-07-11 12:10:42.016 [main] AdminMilkRidev3 - Dashboard URL: https://app.milkride.com/admin/merchant/dashboard
+[INFO ] 2025-07-11 12:10:42.058 [main] AdminMilkRidev3 - login sucefully - Passed 
+[INFO ] 2025-07-11 12:10:45.326 [main] AdminMilkRidev3 - Hubs URL: https://app.milkride.com/admin/hubs
+[INFO ] 2025-07-11 12:10:45.358 [main] AdminMilkRidev3 - Hub listpage sucefully open - Passed 
+[INFO ] 2025-07-11 12:10:48.703 [main] AdminMilkRidev3 - HubInfo URL: https://app.milkride.com/admin/hubs/show/20/info
+[INFO ] 2025-07-11 12:10:48.749 [main] AdminMilkRidev3 - Hubinfo page sucefully open - Passed 
+[INFO ] 2025-07-11 12:10:50.594 [main] AdminMilkRidev3 - Hubs Account URL: https://app.milkride.com/admin/hubs/show/20/users
+[INFO ] 2025-07-11 12:10:50.649 [main] AdminMilkRidev3 - Add Button is displyed 
+[INFO ] 2025-07-11 12:10:52.490 [main] AdminMilkRidev3 - click on Location
+[INFO ] 2025-07-11 12:10:52.501 [main] AdminMilkRidev3 - Hubs Location URL: https://app.milkride.com/admin/hubs/show/20/locations
+[INFO ] 2025-07-11 12:10:52.544 [main] AdminMilkRidev3 - add location Button is displyed 
+[INFO ] 2025-07-11 12:10:52.570 [main] AdminMilkRidev3 - location transfer button is displyed 
+[INFO ] 2025-07-11 12:10:52.593 [main] AdminMilkRidev3 - hub to hub transfer Button is displyed 
+[INFO ] 2025-07-11 12:10:54.707 [main] AdminMilkRidev3 - click on product option
+[INFO ] 2025-07-11 12:10:54.716 [main] AdminMilkRidev3 - Hubs Product URL: https://app.milkride.com/admin/hubs/show/20/product_package
+[INFO ] 2025-07-11 12:10:54.743 [main] AdminMilkRidev3 - Add product Button is displyed 
+[INFO ] 2025-07-11 12:10:56.709 [main] AdminMilkRidev3 - click on contacts page 
+[INFO ] 2025-07-11 12:10:56.743 [main] AdminMilkRidev3 - Add contanct Button is displyed 
+[INFO ] 2025-07-11 12:10:58.604 [main] AdminMilkRidev3 - click on Document page 
+[INFO ] 2025-07-11 12:10:58.611 [main] AdminMilkRidev3 - Hubs Document URL: https://app.milkride.com/admin/hubs/show/20/documents
+[INFO ] 2025-07-11 12:10:58.643 [main] AdminMilkRidev3 - Add Document Button is displyed 
+[INFO ] 2025-07-11 12:11:00.442 [main] AdminMilkRidev3 - click on Disable area page 
+[INFO ] 2025-07-11 12:11:00.454 [main] AdminMilkRidev3 - Hubs Diable area URL: https://app.milkride.com/admin/hubs/show/20/disabled_area
+[INFO ] 2025-07-11 12:11:00.492 [main] AdminMilkRidev3 - Add Diable area Button is displyed 
+[INFO ] 2025-07-11 12:11:01.514 [main] AdminMilkRidev3 - Hub Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:04.447 [main] AdminMilkRidev3 - Delevery Management URL: https://app.milkride.com/admin/delivery/delivery-dashboard
+[INFO ] 2025-07-11 12:11:04.478 [main] AdminMilkRidev3 - Deivery dashborad page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:05.174 [main] AdminMilkRidev3 - Delivery Transfer page  URL: https://app.milkride.com/admin/delivery-transfer
+[INFO ] 2025-07-11 12:11:05.174 [main] AdminMilkRidev3 - Delivery Transfer Open
+[INFO ] 2025-07-11 12:11:07.369 [main] AdminMilkRidev3 - manul Route page  URL: https://app.milkride.com/admin/delivery/manual-route
+[INFO ] 2025-07-11 12:11:07.370 [main] AdminMilkRidev3 - Manual route  Open
+[INFO ] 2025-07-11 12:11:07.996 [main] AdminMilkRidev3 - Route Assistance page  URL: https://app.milkride.com/admin/delivery/route-assignment
+[INFO ] 2025-07-11 12:11:07.996 [main] AdminMilkRidev3 - Route Assistance  page Open
+[INFO ] 2025-07-11 12:11:09.957 [main] AdminMilkRidev3 - Master Route page  URL: https://app.milkride.com/admin/master-delivery/master-route
+[INFO ] 2025-07-11 12:11:09.958 [main] AdminMilkRidev3 - Master Route  page Open
+[INFO ] 2025-07-11 12:11:10.893 [main] AdminMilkRidev3 - Delivery_Management Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:13.165 [main] AdminMilkRidev3 - Invoice page URL: https://app.milkride.com/admin/merchants/invoices
+[INFO ] 2025-07-11 12:11:13.194 [main] AdminMilkRidev3 - Invoice List page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:14.045 [main] AdminMilkRidev3 - Billing_History Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:15.660 [main] AdminMilkRidev3 - Invoice page URL: https://app.milkride.com/admin/customers
+[INFO ] 2025-07-11 12:11:15.692 [main] AdminMilkRidev3 - Customers List page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:16.750 [main] AdminMilkRidev3 - Subscription page URL: https://app.milkride.com/admin/customers/all-subscriptions
+[INFO ] 2025-07-11 12:11:16.779 [main] AdminMilkRidev3 - add subscription option is displayed
+[INFO ] 2025-07-11 12:11:17.511 [main] AdminMilkRidev3 - Order page URL: https://app.milkride.com/admin/customers/all-orders
+[INFO ] 2025-07-11 12:11:18.153 [main] AdminMilkRidev3 - Customer price page URL: https://app.milkride.com/admin/customergroup
+[INFO ] 2025-07-11 12:11:19.662 [main] AdminMilkRidev3 - click on customer Managment module
+[INFO ] 2025-07-11 12:11:21.736 [main] AdminMilkRidev3 - Customer Invoice page URL: https://app.milkride.com/admin/invoices
+[INFO ] 2025-07-11 12:11:21.771 [main] AdminMilkRidev3 - Invoice list sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:22.730 [main] AdminMilkRidev3 - Customer_Managemnt Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:26.211 [main] AdminMilkRidev3 - Category page URL: https://app.milkride.com/admin/categories
+[INFO ] 2025-07-11 12:11:27.063 [main] AdminMilkRidev3 - Brand page URL: https://app.milkride.com/admin/brands
+[INFO ] 2025-07-11 12:11:29.334 [main] AdminMilkRidev3 - Product page URL: https://app.milkride.com/admin/products
+[INFO ] 2025-07-11 12:11:31.733 [main] AdminMilkRidev3 - Quick Product page URL: https://app.milkride.com/admin/bulkProducts/bulkProducts
+[INFO ] 2025-07-11 12:11:31.762 [main] AdminMilkRidev3 - Product list sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:32.681 [main] AdminMilkRidev3 - Product Catelog Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:34.539 [main] AdminMilkRidev3 - Warehouse page URL: https://app.milkride.com/admin/warehouse
+[INFO ] 2025-07-11 12:11:35.197 [main] AdminMilkRidev3 - Supplier page URL: https://app.milkride.com/admin/supplier
+[INFO ] 2025-07-11 12:11:35.995 [main] AdminMilkRidev3 - Purchase Inventory page URL: https://app.milkride.com/admin/purchase
+[INFO ] 2025-07-11 12:11:37.106 [main] AdminMilkRidev3 - Inventory_Managment Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:38.791 [main] AdminMilkRidev3 - Setting page URL: https://app.milkride.com/admin/subscription_settings
+[INFO ] 2025-07-11 12:11:38.823 [main] AdminMilkRidev3 - Flexproduct_Setting_page sucefully - Passed 
+[INFO ] 2025-07-11 12:11:39.523 [main] AdminMilkRidev3 - Attributes page URL: https://app.milkride.com/admin/attributes
+[INFO ] 2025-07-11 12:11:39.551 [main] AdminMilkRidev3 - Add Attribute button displayed: true
+[INFO ] 2025-07-11 12:11:40.139 [main] AdminMilkRidev3 - Working Day page URL: https://app.milkride.com/admin/working_days
+[INFO ] 2025-07-11 12:11:40.825 [main] AdminMilkRidev3 - Clicked on Plan Slot
+[INFO ] 2025-07-11 12:11:40.839 [main] AdminMilkRidev3 - Plan Slot page URL: https://app.milkride.com/admin/planslot
+[INFO ] 2025-07-11 12:11:40.864 [main] AdminMilkRidev3 - Plan Slot header verified successfully
+[INFO ] 2025-07-11 12:11:42.918 [main] AdminMilkRidev3 - Clicked on Subscription List
+[INFO ] 2025-07-11 12:11:42.925 [main] AdminMilkRidev3 - Subscription List page URL: https://app.milkride.com/admin/order_subscriptions_plans/plans
+[INFO ] 2025-07-11 12:11:42.958 [main] AdminMilkRidev3 - FlexProduct Plans header verified successfully
+[INFO ] 2025-07-11 12:11:43.773 [main] AdminMilkRidev3 - FlexProduct_Plan Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:47.309 [main] AdminMilkRidev3 - Banner page URL: https://app.milkride.com/admin/banners
+[INFO ] 2025-07-11 12:11:47.349 [main] AdminMilkRidev3 - Banner page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:47.385 [main] AdminMilkRidev3 - Add Banner button is displayed
+[INFO ] 2025-07-11 12:11:48.622 [main] AdminMilkRidev3 - Banner Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:50.652 [main] AdminMilkRidev3 - Region page URL: https://app.milkride.com/admin/regions
+[INFO ] 2025-07-11 12:11:50.683 [main] AdminMilkRidev3 - Region page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:50.704 [main] AdminMilkRidev3 - Add Region button is displayed
+[INFO ] 2025-07-11 12:11:52.014 [main] AdminMilkRidev3 - Clicked on Location
+[INFO ] 2025-07-11 12:11:52.023 [main] AdminMilkRidev3 - Location page URL: https://app.milkride.com/admin/locations
+[INFO ] 2025-07-11 12:11:52.056 [main] AdminMilkRidev3 - Locations page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:52.077 [main] AdminMilkRidev3 - Add Location button is displayed
+[INFO ] 2025-07-11 12:11:54.483 [main] AdminMilkRidev3 - Clicked on Area
+[INFO ] 2025-07-11 12:11:54.514 [main] AdminMilkRidev3 - Area page URL: https://app.milkride.com/admin/areas
+[INFO ] 2025-07-11 12:11:54.553 [main] AdminMilkRidev3 - Area List Header Text: Areas List
+[INFO ] 2025-07-11 12:11:54.553 [main] AdminMilkRidev3 - Area page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:54.574 [main] AdminMilkRidev3 - Add Area button is displayed
+[INFO ] 2025-07-11 12:11:55.478 [main] AdminMilkRidev3 - Clicked on Route
+[INFO ] 2025-07-11 12:11:55.488 [main] AdminMilkRidev3 - Route page URL: https://app.milkride.com/admin/routes
+[INFO ] 2025-07-11 12:11:55.521 [main] AdminMilkRidev3 - Routes Header Text: Routes List
+[INFO ] 2025-07-11 12:11:55.521 [main] AdminMilkRidev3 - Routes page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:55.545 [main] AdminMilkRidev3 - Add Route button is displayed
+[INFO ] 2025-07-11 12:11:56.429 [main] AdminMilkRidev3 - Locations_Manager Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:11:58.406 [main] AdminMilkRidev3 - Report page URL: https://app.milkride.com/admin/reports
+[INFO ] 2025-07-11 12:11:58.440 [main] AdminMilkRidev3 - Reports List Header Text: Reports List
+[INFO ] 2025-07-11 12:11:58.440 [main] AdminMilkRidev3 - Reports List page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:58.462 [main] AdminMilkRidev3 - Customer Reports text is displayed
+[INFO ] 2025-07-11 12:11:59.188 [main] AdminMilkRidev3 - Customer Wallet page URL: https://app.milkride.com/admin/reports/customer-wallet
+[INFO ] 2025-07-11 12:11:59.215 [main] AdminMilkRidev3 - Customer Wallet page sucefully open - Passed 
+[INFO ] 2025-07-11 12:11:59.242 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:11:59.943 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:00.686 [main] AdminMilkRidev3 - Customer Information page URL: https://app.milkride.com/admin/reports/admin/customer-information
+[INFO ] 2025-07-11 12:12:00.715 [main] AdminMilkRidev3 - Customer Information page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:00.742 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:01.513 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:03.254 [main] AdminMilkRidev3 - Clicked on Activity Logs
+[INFO ] 2025-07-11 12:12:03.264 [main] AdminMilkRidev3 - Activity Logs page URL: https://app.milkride.com/admin/reports/activity
+[INFO ] 2025-07-11 12:12:03.289 [main] AdminMilkRidev3 - Activity Log Header Text: Activity List
+[INFO ] 2025-07-11 12:12:03.289 [main] AdminMilkRidev3 - Activity Logs page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:03.308 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:03.954 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:04.643 [main] AdminMilkRidev3 - Low Credit page URL: https://app.milkride.com/admin/reports/low_credit/get/export
+[INFO ] 2025-07-11 12:12:04.670 [main] AdminMilkRidev3 - Low Credit page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:04.689 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:05.982 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:06.692 [main] AdminMilkRidev3 - Customer Vacation page URL: https://app.milkride.com/admin/reports/customer_vacation
+[INFO ] 2025-07-11 12:12:06.718 [main] AdminMilkRidev3 - Customer Vacation page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:06.735 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:07.367 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:08.113 [main] AdminMilkRidev3 - Subscription page URL: https://app.milkride.com/admin/reports/subscriptions
+[INFO ] 2025-07-11 12:12:08.151 [main] AdminMilkRidev3 - Subscription page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:08.171 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:08.856 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:09.630 [main] AdminMilkRidev3 - Subscription End page URL: https://app.milkride.com/admin/reports/subscription_end
+[INFO ] 2025-07-11 12:12:09.660 [main] AdminMilkRidev3 - Subscription End page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:09.678 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:10.353 [main] AdminMilkRidev3 - Clicked on Reports
+[INFO ] 2025-07-11 12:12:10.393 [main] AdminMilkRidev3 - Operational Reports text is displayed
+[INFO ] 2025-07-11 12:12:12.232 [main] AdminMilkRidev3 - Future Orders page URL: https://app.milkride.com/admin/reports/future_orders
+[INFO ] 2025-07-11 12:12:12.265 [main] AdminMilkRidev3 - Future Orders page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:12.284 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:12.378 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:13.967 [main] AdminMilkRidev3 - Predictive Analysis page URL: https://app.milkride.com/admin/reports/predictive_analysis
+[INFO ] 2025-07-11 12:12:14.001 [main] AdminMilkRidev3 - Predictive Analysis page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:14.020 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:14.685 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:15.441 [main] AdminMilkRidev3 - Reverse Logistic page URL: https://app.milkride.com/admin/reports/reverse_logistic
+[INFO ] 2025-07-11 12:12:15.476 [main] AdminMilkRidev3 - Reverse Logistic page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:16.151 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:16.827 [main] AdminMilkRidev3 - Cash Collections page URL: https://app.milkride.com/admin/reports/cash_collection
+[INFO ] 2025-07-11 12:12:16.853 [main] AdminMilkRidev3 - Cash Collections page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:16.871 [main] AdminMilkRidev3 - Export CSV button is displayed
+[INFO ] 2025-07-11 12:12:17.580 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:19.470 [main] AdminMilkRidev3 - Order Information page URL: https://app.milkride.com/admin/reports/orders/data/information
+[INFO ] 2025-07-11 12:12:19.528 [main] AdminMilkRidev3 - Order Information page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:19.592 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:20.818 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:21.603 [main] AdminMilkRidev3 - Cancelled Order page URL: https://app.milkride.com/admin/reports/cancelled_order
+[INFO ] 2025-07-11 12:12:21.632 [main] AdminMilkRidev3 - Cancelled Order page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:21.648 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:22.304 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:23.685 [main] AdminMilkRidev3 - Deliveries Information page URL: https://app.milkride.com/admin/reports/return
+[INFO ] 2025-07-11 12:12:23.716 [main] AdminMilkRidev3 - Deliveries Information page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:23.735 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:24.340 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:25.015 [main] AdminMilkRidev3 - Image Proof page URL: https://app.milkride.com/admin/reports/image_proof
+[INFO ] 2025-07-11 12:12:25.045 [main] AdminMilkRidev3 - Image Proof page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:25.064 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:26.104 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:26.130 [main] AdminMilkRidev3 - Sales Reports text is displayed
+[INFO ] 2025-07-11 12:12:27.094 [main] AdminMilkRidev3 - Transactions page URL: https://app.milkride.com/admin/reports/transactions
+[INFO ] 2025-07-11 12:12:27.123 [main] AdminMilkRidev3 - Transactions page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:27.145 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:27.762 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:28.484 [main] AdminMilkRidev3 - Cumulative Sales page URL: https://app.milkride.com/admin/reports/cumulative_sales
+[INFO ] 2025-07-11 12:12:28.515 [main] AdminMilkRidev3 - Cumulative Sales page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:28.533 [main] AdminMilkRidev3 - Export As button is displayed
+[INFO ] 2025-07-11 12:12:29.131 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:30.499 [main] AdminMilkRidev3 - Orders Sheet page URL: https://app.milkride.com/admin/reports/order_sheet
+[INFO ] 2025-07-11 12:12:30.531 [main] AdminMilkRidev3 - Orders Sheet page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:30.555 [main] AdminMilkRidev3 - Download Delivery button is displayed
+[INFO ] 2025-07-11 12:12:32.136 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:32.993 [main] AdminMilkRidev3 - Wallet Payment page URL: https://app.milkride.com/admin/reports/payment_gateway_usage
+[INFO ] 2025-07-11 12:12:33.022 [main] AdminMilkRidev3 - Wallet Payment page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:33.098 [main] AdminMilkRidev3 - Clicked on Back button
+[INFO ] 2025-07-11 12:12:34.173 [main] AdminMilkRidev3 - Report_Module Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:12:36.459 [main] AdminMilkRidev3 - User page URL: https://app.milkride.com/admin/users
+[INFO ] 2025-07-11 12:12:36.493 [main] AdminMilkRidev3 - User page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:36.514 [main] AdminMilkRidev3 - Add User button is displayed
+[INFO ] 2025-07-11 12:12:37.303 [main] AdminMilkRidev3 - Add Agent page URL: https://app.milkride.com/admin/agents
+[INFO ] 2025-07-11 12:12:37.332 [main] AdminMilkRidev3 - Add Agent page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:37.355 [main] AdminMilkRidev3 - Add Agent button is displayed
+[INFO ] 2025-07-11 12:12:38.166 [main] AdminMilkRidev3 - Role page URL: https://app.milkride.com/admin/roles
+[INFO ] 2025-07-11 12:12:38.193 [main] AdminMilkRidev3 - Role page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:38.215 [main] AdminMilkRidev3 - Add Role button is displayed
+[INFO ] 2025-07-11 12:12:39.962 [main] AdminMilkRidev3 - Role_Module Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:12:42.411 [main] AdminMilkRidev3 - Tickets page URL: https://app.milkride.com/admin/tickets
+[INFO ] 2025-07-11 12:12:42.443 [main] AdminMilkRidev3 - Tickets page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:42.463 [main] AdminMilkRidev3 - Add New Ticket button is displayed
+[INFO ] 2025-07-11 12:12:43.485 [main] AdminMilkRidev3 - Support Management Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:12:45.705 [main] AdminMilkRidev3 - Features page URL: https://app.milkride.com/admin/features/list
+[INFO ] 2025-07-11 12:12:45.729 [main] AdminMilkRidev3 - Features page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:46.936 [main] AdminMilkRidev3 - Features Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:12:48.889 [main] AdminMilkRidev3 - General Setting page URL: https://app.milkride.com/admin/setting/12/general_settings
+[INFO ] 2025-07-11 12:12:48.913 [main] AdminMilkRidev3 - General Setting page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:49.838 [main] AdminMilkRidev3 - General_Setting Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:12:52.673 [main] AdminMilkRidev3 - Manage CMS page URL: https://app.milkride.com/admin/setting/12/cms_pages
+[INFO ] 2025-07-11 12:12:52.698 [main] AdminMilkRidev3 - Manage CMS page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:53.493 [main] AdminMilkRidev3 - Manage_CMS_Pages Module Finish...click on dashborad
+[INFO ] 2025-07-11 12:12:55.907 [main] AdminMilkRidev3 - Site Management page URL: https://app.milkride.com/admin/config/11/edit
+[INFO ] 2025-07-11 12:12:55.934 [main] AdminMilkRidev3 - Site Management page sucefully open - Passed 
+[INFO ] 2025-07-11 12:12:56.799 [main] AdminMilkRidev3 - Site_Management Module Finish...click on dashborad
